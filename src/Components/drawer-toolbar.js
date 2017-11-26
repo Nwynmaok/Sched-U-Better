@@ -86,14 +86,6 @@ export default class DrawerMenu extends Component {
                     },
                   },
                   {
-                    icon: 'today', value: 'Calendar',
-                    active: this.state.active == 'calendar',
-                    onPress: () => {
-                      this.setState({ active: 'calendar' });
-                      this.props.navigation.navigate('Calendar');
-                    },
-                  },
-                  {
                     icon: 'book', value: 'Explore Degrees',
                     active: this.state.active == 'exploredegrees',
                     onPress: () => {

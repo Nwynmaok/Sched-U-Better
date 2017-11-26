@@ -81,8 +81,8 @@ class MajorSearch extends Component {
 
   render() {
     return(
-      <ScrollView>
-        <List containerStyle={{top:28}}>
+      <ScrollView style={{paddingTop: 50}}>
+        <List>
           {
             list.map((item, i) => (
               <ListItem
@@ -161,6 +161,7 @@ const accounting = [
     subtitle: 'Honors: Introduction to Financial Reporting (4.0 cr)'
   },
 ]
+
 class DegreeRequirements extends Component {
   render() {
     switch (this.props.selectedDegree) {
@@ -323,6 +324,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
                     />
                   </View>
                 </View>
@@ -508,6 +510,7 @@ class ExploreDegrees extends Component {
     this.handler = this.handler.bind(this)
     this.navigator = this.navigator.bind(this)
     this.asyncStore = this.asyncStore.bind(this)
+    this.asyncAddSchedule = this.asyncAddSchedule.bind(this)
   }
 
   handler(view) {
@@ -524,6 +527,23 @@ class ExploreDegrees extends Component {
     })
   }
 
+  asyncAddSchedule(title, day, start, end, location) {
+    let courseinfo = {
+       title: title, day: day, start: start, end: end, location: location
+    }
+    try {
+      AsyncStorage.getItem('schedule')
+        .then(schedule => {
+          schedule = schedule == null ? [] : JSON.parse(schedule)
+          schedule = Array.isArray(schedule) ? schedule : [schedule]
+          schedule.push(courseinfo)
+          return AsyncStorage.setItem('schedule', JSON.stringify(schedule))
+        })
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   asyncStore(course) {
     try {
       AsyncStorage.getItem('courses')
@@ -533,23 +553,6 @@ class ExploreDegrees extends Component {
           saved.push(course)
           return AsyncStorage.setItem('courses', JSON.stringify(saved))
         })
-      // AsyncStorage.getItem('courses', (err, result) => {
-      //   const id = [1];
-      //   if (result !== null) {
-      //     console.log('Data Found', result);
-      //     var newIds = JSON.parse(result).concat(id);
-      //     AsyncStorage.setItem('saveIds', JSON.stringify(newIds));
-      //   } else {
-      //     console.log('Data not found');
-      //     AsyncStorage.setItem('saveIds', JSON.stringify(id));
-      //   }
-      // });
-      // let courses = AsyncStorage.getItem('courses');
-      // console.log(courses);
-      // courses = JSON.parse(courses);
-      // courses.push(course);
-      // AsyncStorage.setItem('courses', JSON.stringify(courses));
-      // console.log(courses);
     } catch (error) {
       console.log(error);
     }
@@ -586,7 +589,7 @@ class ExploreDegrees extends Component {
               renderSelectedIcon={() => <Icon style={{top: 5}} name="book" size={30} color="#7a0019" />}
               selected={this.state.selectedTab === 'Courses'}
               onPress={() => this.setState({ selectedTab: 'Courses' })}>
-              <Courses selectedCourse={this.state.selectedCourse} asyncStore={this.asyncStore}/>
+              <Courses selectedCourse={this.state.selectedCourse} asyncStore={this.asyncStore} asyncAddSchedule={this.asyncAddSchedule}/>
             </TabNavigator.Item>
           </TabNavigator>
         </Container>

@@ -13,7 +13,6 @@ import * as Colors from '../themes/colors';
 const Stack = StackNavigator(
   {
     Dashboard: { screen: Dashboard },
-    Calendar: { screen: Calendar },
     ExploreDegrees: { screen: ExploreDegrees },
     ScheduleBuilder: { screen: ScheduleBuilder },
     Reviews: { screen: Reviews }
