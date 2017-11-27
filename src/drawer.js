@@ -45,5 +45,4 @@ class App extends Component {
   }
 }
 
-Expo.registerRootComponent(App);
 export default App;
