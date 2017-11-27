@@ -199,27 +199,1354 @@ class CourseSearch extends Component {
       }
     }
 
-
-    // return(
-    //   <ScrollView>
-    //
-    //     <View style={styles.topsavedcourses}>
-    //       <Card title="SAVED COURSES">
-    //         <View>{courselist}</View>
-    //       </Card>
-    //     </View>
-    //     <TextInput
-    //       style={styles.topsearchstyle}
-    //       placeholder="Course Search"
-    //       onChangeText={(text) => this.setState({text})}
-    //       onSubmitEditing={() => this.props.searchHandler(this.state.text)}
-    //     />
-    //
-    // </ScrollView>
-  // );
-
-
     switch (this.props.searchedCourse) {
+      case 'accounting':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACCT 2050-001{"\n"}Spring 2018{"\n"}M W 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Kendell Poch{"\n"}Capacity: 45/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Soph
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ACCT 2050-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'Accounting':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACCT 2050-001{"\n"}Spring 2018{"\n"}M W 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Kendell Poch{"\n"}Capacity: 45/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Soph
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ACCT 2050-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'ACCT':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACCT 2050-001{"\n"}Spring 2018{"\n"}M W 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Kendell Poch{"\n"}Capacity: 45/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Soph
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ACCT 2050-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'ACCT 2050-001':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACCT 2050-001{"\n"}Spring 2018{"\n"}M W 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Kendell Poch{"\n"}Capacity: 45/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Soph
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ACCT 2050-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'ACCT 2050':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACCT 2050-001{"\n"}Spring 2018{"\n"}M W 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Kendell Poch{"\n"}Capacity: 45/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Soph
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ACCT 2050-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'SCO':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      SCO 2550-001{"\n"}Spring 2018{"\n"}Tu Th 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Bhupinder Juneja{"\n"}Capacity: 13/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [Math 1031 or equiv], at least 30 cr
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Data analysis, basic inferential procedures, statistical sampling/design, regression/time series analysis. How statistical thinking contributes to improved decision making.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('SCO 2550-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+        case 'Statistics':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                 <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        SCO 2550-001{"\n"}Spring 2018{"\n"}Tu Th 8:00 - 9:40
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Bhupinder Juneja{"\n"}Capacity: 13/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Carlson School of Management L-110
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [Math 1031 or equiv], at least 30 cr
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Data analysis, basic inferential procedures, statistical sampling/design, regression/time series analysis. How statistical thinking contributes to improved decision making.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: non-CSOM Students only
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('SCO 2550-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+            </ScrollView>
+          );
+        case 'statistics':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                 <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        SCO 2550-001{"\n"}Spring 2018{"\n"}Tu Th 8:00 - 9:40
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Bhupinder Juneja{"\n"}Capacity: 13/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Carlson School of Management L-110
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [Math 1031 or equiv], at least 30 cr
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Data analysis, basic inferential procedures, statistical sampling/design, regression/time series analysis. How statistical thinking contributes to improved decision making.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: non-CSOM Students only
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('SCO 2550-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+            </ScrollView>
+          );
+      case 'SCO 2550-001':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      SCO 2550-001{"\n"}Spring 2018{"\n"}Tu Th 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Bhupinder Juneja{"\n"}Capacity: 13/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [Math 1031 or equiv], at least 30 cr
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Data analysis, basic inferential procedures, statistical sampling/design, regression/time series analysis. How statistical thinking contributes to improved decision making.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('SCO 2550-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'SCO 2550':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      SCO 2550-001{"\n"}Spring 2018{"\n"}Tu Th 8:00 - 9:40
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Bhupinder Juneja{"\n"}Capacity: 13/120
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-110
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [Math 1031 or equiv], at least 30 cr
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Data analysis, basic inferential procedures, statistical sampling/design, regression/time series analysis. How statistical thinking contributes to improved decision making.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: non-CSOM Students only
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('SCO 2550-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+        case 'calculus':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                 <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Lind Hall 302
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+            </ScrollView>
+          );
+        case 'Calculus':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                 <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Lind Hall 302
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+            </ScrollView>
+          );
+        case 'Math':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                 <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Lind Hall 302
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+            </ScrollView>
+          );
+        case 'math':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                 <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Lind Hall 302
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+            </ScrollView>
+          );
+      case 'MATH':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Lind Hall 302
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'MATH 1142-001':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Lind Hall 302
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'MATH 1142':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 6/28
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Lind Hall 302
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [Satisfactory score on placement test or grade of at least C- in [1031 or 1051]
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    A streamlined one-semester tour of differential and integral calculus in one variable, and differential calculus in two variables. No trigonometry/does not have the same depth as MATH 1271-1272. Formulas and their interpretation and use in applications.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('MATH 1142-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'ECON 1102':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Wiley Hall 175
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'ECON 1102-001':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Wiley Hall 175
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
       case 'ECON 1101-034':
         return(
           <ScrollView>
@@ -924,8 +2251,604 @@ class CourseSearch extends Component {
                   </View>
                 </Card>
               </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Wiley Hall 175
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
             </ScrollView>
           );
+          case 'Economics':
+            return (
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
+                <View style={styles.topsavedcourses}>
+                  <Card title="SAVED COURSES">
+                    <View>{courselist}</View>
+                  </Card>
+                </View>
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-001{"\n"}Spring 2018{"\n"}M W F 9:05 - 9:55
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Wiley Hall 175
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: knowledge of plane geometry and advanced algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Associated Section: ECON 1101-001
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Blegen Hall 415
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-002')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Blegen Hall 425
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: knowledge of plane geometry and advanced algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-033')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Associated Section: ECON 1101-033
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Carlson School of Management L-126
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-034')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Wiley Hall 175
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+              </ScrollView>
+            );
+          case 'economics':
+            return (
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
+                <View style={styles.topsavedcourses}>
+                  <Card title="SAVED COURSES">
+                    <View>{courselist}</View>
+                  </Card>
+                </View>
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-001{"\n"}Spring 2018{"\n"}M W F 9:05 - 9:55
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Wiley Hall 175
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: knowledge of plane geometry and advanced algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Associated Section: ECON 1101-001
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Blegen Hall 415
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-002')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Blegen Hall 425
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: knowledge of plane geometry and advanced algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-033')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Associated Section: ECON 1101-033
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Carlson School of Management L-126
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1101-034')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Wiley Hall 175
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+              </ScrollView>
+            );
       default:
         return (
           <ScrollView>
