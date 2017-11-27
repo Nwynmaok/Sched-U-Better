@@ -72,7 +72,6 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   topsavedcourses: {
-    paddingTop: 50,
   },
   buttonContainer: {
     flex: 1,
@@ -151,7 +150,6 @@ class CourseSearch extends Component {
   }
 
   asyncDelete(course) {
-    console.log(course)
     try {
       AsyncStorage.getItem('courses')
         .then(saved => {
@@ -201,22 +199,244 @@ class CourseSearch extends Component {
       }
     }
 
+
+    // return(
+    //   <ScrollView>
+    //
+    //     <View style={styles.topsavedcourses}>
+    //       <Card title="SAVED COURSES">
+    //         <View>{courselist}</View>
+    //       </Card>
+    //     </View>
+    //     <TextInput
+    //       style={styles.topsearchstyle}
+    //       placeholder="Course Search"
+    //       onChangeText={(text) => this.setState({text})}
+    //       onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+    //     />
+    //
+    // </ScrollView>
+  // );
+
+
     switch (this.props.searchedCourse) {
-      case 'ECON 1101-001':
+      case 'ECON 1101-034':
         return(
           <ScrollView>
-
-            <View style={styles.topsavedcourses}>
-              <Card title="SAVED COURSES">
-                <View>{courselist}</View>
-              </Card>
-            </View>
             <TextInput
               style={styles.topsearchstyle}
               placeholder="Course Search"
               onChangeText={(text) => this.setState({text})}
               onSubmitEditing={() => this.props.searchHandler(this.state.text)}
             />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+               <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Associated Section: ECON 1101-033
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management L-126
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1101-034')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+
+          </ScrollView>
+        );
+      case 'ECON 1101-033':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+                <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Blegen Hall 425
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: knowledge of plane geometry and advanced algebra
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1101-033')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+          </ScrollView>
+        );
+      case 'ECON 1101-002':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+                <View>{courselist}</View>
+              </Card>
+            </View>
+
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Associated Section: ECON 1101-001
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Blegen Hall 415
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1101-002')}
+
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+          </ScrollView>
+        );
+      case 'ECON 1101-001':
+        return(
+          <ScrollView>
+            <TextInput
+              style={styles.topsearchstyle}
+              placeholder="Course Search"
+              onChangeText={(text) => this.setState({text})}
+              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+            />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+                <View>{courselist}</View>
+              </Card>
+            </View>
+
             <View>
               <Card>
                 <View style={styles.flextext}>
@@ -263,6 +483,8 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+
                     />
                   </View>
                 </View>
@@ -273,18 +495,18 @@ class CourseSearch extends Component {
       case 'ECON 1101':
         return (
           <ScrollView>
-
-            <View style={styles.topsavedcourses}>
-              <Card title="SAVED COURSES">
-                <View>{courselist}</View>
-              </Card>
-            </View>
             <TextInput
               style={styles.topsearchstyle}
               placeholder="Course Search"
               onChangeText={(text) => this.setState({text})}
               onSubmitEditing={() => this.props.searchHandler(this.state.text)}
             />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+                <View>{courselist}</View>
+              </Card>
+            </View>
+
             <View>
               <Card>
                 <View style={styles.flextext}>
@@ -331,6 +553,8 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+
                     />
                   </View>
                 </View>
@@ -376,6 +600,8 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+
                     />
                   </View>
                 </View>
@@ -427,6 +653,8 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+
                     />
                   </View>
                 </View>
@@ -472,6 +700,8 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+
                     />
                   </View>
                 </View>
@@ -479,20 +709,238 @@ class CourseSearch extends Component {
             </View>
           </ScrollView>
         );
+        case 'ECON':
+          return (
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+              <View style={styles.topsavedcourses}>
+                <Card title="SAVED COURSES">
+                  <View>{courselist}</View>
+                </Card>
+              </View>
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ECON 1101-001{"\n"}Spring 2018{"\n"}M W F 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Wiley Hall 175
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: knowledge of plane geometry and advanced algebra
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('ECON 1101-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Associated Section: ECON 1101-001
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Blegen Hall 415
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('ECON 1101-002')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Blegen Hall 425
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: knowledge of plane geometry and advanced algebra
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('ECON 1101-033')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Associated Section: ECON 1101-033
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Carlson School of Management L-126
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.props.asyncStore('ECON 1101-034')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
       default:
         return (
           <ScrollView>
-            <View style={styles.topsavedcourses}>
-              <Card title="SAVED COURSES">
-                <View>{courselist}</View>
-              </Card>
-            </View>
             <TextInput
               style={styles.topsearchstyle}
               placeholder="Course Search"
               onChangeText={(text) => this.setState({text})}
               onSubmitEditing={() => this.props.searchHandler(this.state.text)}
             />
+            <View style={styles.topsavedcourses}>
+              <Card title="SAVED COURSES">
+                <View>{courselist}</View>
+              </Card>
+            </View>
+
 
           </ScrollView>
         );
@@ -518,8 +966,13 @@ class Calendar extends Component {
 class Dashboard extends Component {
   constructor(props) {
     super(props)
-    this.state = { selectedTab: 'CourseSearch', searchedCourse: 'init'}
+    this.state = {
+      // selectedTab: 'CourseSearch',
+      searchedCourse: 'init'
+    }
     this.searchHandler = this.searchHandler.bind(this)
+    this.asyncAddSchedule = this.asyncAddSchedule.bind(this)
+
   }
 
   searchHandler(course) {
@@ -542,6 +995,23 @@ class Dashboard extends Component {
     }
   }
 
+  asyncAddSchedule(title, day, start, end, location) {
+    let courseinfo = {
+       title: title, day: day, start: start, end: end, location: location
+    }
+    try {
+      AsyncStorage.getItem('schedule')
+        .then(schedule => {
+          schedule = schedule == null ? [] : JSON.parse(schedule)
+          schedule = Array.isArray(schedule) ? schedule : [schedule]
+          schedule.push(courseinfo)
+          return AsyncStorage.setItem('schedule', JSON.stringify(schedule))
+        })
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   render () {
     return (
       <ThemeProvider uiTheme={uiTheme}>
@@ -552,33 +1022,37 @@ class Dashboard extends Component {
             onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
             centerElement="Dashboard"
           />
-          <TabNavigator tabBarStyle={{top:0}} tabBarShadowStyle={{bottom:0, top:null}} style={{marginBottom:-50}}>
-              <TabNavigator.Item
-                titleStyle={{opacity: 0}}
-                renderIcon={() => <Icon style={{top: 5}} name="search" size={30} color="#000000" />}
-                renderSelectedIcon={() => <Icon style={{top: 5}} name="search" size={30} color="#7a0019" />}
-                selected={this.state.selectedTab === 'CourseSearch'}
-                onPress={() => this.setState({ selectedTab: 'CourseSearch' })}>
-                <CourseSearch searchedCourse={this.state.searchedCourse} searchHandler={this.searchHandler} asyncStore={this.asyncStore}/>
-              </TabNavigator.Item>
-              <TabNavigator.Item
-                renderIcon={() => <Icon style={{top: 5}} name="shopping-cart" size={30} color="#000000" />}
-                renderSelectedIcon={() => <Icon style={{top: 5}} name="shopping-cart" size={30} color="#7a0019" />}
-                selected={this.state.selectedTab === 'Schedules'}
-                onPress={() => this.setState({ selectedTab: 'Schedules' })}>
-                <Schedules />
-              </TabNavigator.Item>
-              <TabNavigator.Item
-                renderIcon={() => <Icon style={{top: 5}} name="calendar" size={30} color="#000000" />}
-                renderSelectedIcon={() => <Icon style={{top: 5}} name="calendar" size={30} color="#7a0019" />}
-                selected={this.state.selectedTab === 'Calendar'}
-                onPress={() => this.setState({ selectedTab: 'Calendar' })}>
-                <Calendar />
-              </TabNavigator.Item>
-            </TabNavigator>
+          <CourseSearch searchedCourse={this.state.searchedCourse} searchHandler={this.searchHandler} asyncStore={this.asyncStore} asyncAddSchedule={this.asyncAddSchedule}/>
+
         </Container>
       </ThemeProvider>
     );
   }
 }
 export default Dashboard;
+
+//
+// <TabNavigator tabBarStyle={{top:0}} tabBarShadowStyle={{bottom:0, top:null}} style={{marginBottom:-50}}>
+//     <TabNavigator.Item
+//       titleStyle={{opacity: 0}}
+//       renderIcon={() => <Icon style={{top: 5}} name="search" size={30} color="#000000" />}
+//       renderSelectedIcon={() => <Icon style={{top: 5}} name="search" size={30} color="#7a0019" />}
+//       selected={this.state.selectedTab === 'CourseSearch'}
+//       onPress={() => this.setState({ selectedTab: 'CourseSearch' })}>
+//       <CourseSearch searchedCourse={this.state.searchedCourse} searchHandler={this.searchHandler} asyncStore={this.asyncStore}/>
+//     </TabNavigator.Item>
+//     <TabNavigator.Item
+//       renderIcon={() => <Icon style={{top: 5}} name="shopping-cart" size={30} color="#000000" />}
+//       renderSelectedIcon={() => <Icon style={{top: 5}} name="shopping-cart" size={30} color="#7a0019" />}
+//       selected={this.state.selectedTab === 'Schedules'}
+//       onPress={() => this.setState({ selectedTab: 'Schedules' })}>
+//       <Schedules />
+//     </TabNavigator.Item>
+//     <TabNavigator.Item
+//       renderIcon={() => <Icon style={{top: 5}} name="calendar" size={30} color="#000000" />}
+//       renderSelectedIcon={() => <Icon style={{top: 5}} name="calendar" size={30} color="#7a0019" />}
+//       selected={this.state.selectedTab === 'Calendar'}
+//       onPress={() => this.setState({ selectedTab: 'Calendar' })}>
+//       <Calendar />
+//     </TabNavigator.Item>
+//   </TabNavigator>

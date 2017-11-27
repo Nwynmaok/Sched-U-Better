@@ -32,7 +32,7 @@ export default class DrawerMenu extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-        active: 'people',
+        active: 'dashboard',
       };
   }
 
@@ -101,14 +101,14 @@ export default class DrawerMenu extends Component {
                       this.props.navigation.navigate('ScheduleBuilder');
                     },
                   },
-                  {
-                    icon: 'alarm', value: 'Reviews',
-                    active: this.state.active == 'reviews',
-                    onPress: () => {
-                      this.setState({ active: 'reviews' });
-                      this.props.navigation.navigate('Reviews');
-                    },
-                  },
+                  // {
+                  //   icon: 'alarm', value: 'Reviews',
+                  //   active: this.state.active == 'reviews',
+                  //   onPress: () => {
+                  //     this.setState({ active: 'reviews' });
+                  //     this.props.navigation.navigate('Reviews');
+                  //   },
+                  // },
                 ]}
               />
             </Drawer>

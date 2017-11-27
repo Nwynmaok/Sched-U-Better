@@ -81,8 +81,9 @@ class MajorSearch extends Component {
 
   render() {
     return(
-      <ScrollView style={{paddingTop: 50}}>
-        <List>
+      <ScrollView >
+        <View style={{paddingTop: 29}}>
+        <List >
           {
             list.map((item, i) => (
               <ListItem
@@ -94,6 +95,7 @@ class MajorSearch extends Component {
             ))
           }
         </List>
+        </View>
       </ScrollView>
     );
   }
@@ -159,6 +161,170 @@ const accounting = [
   {
     name: 'SCO 2550',
     subtitle: 'Honors: Introduction to Financial Reporting (4.0 cr)'
+  },
+]
+const management = [
+  {
+    name: 'MGMT 1001',
+    subtitle: 'Contemporary Management (3.0 cr)'
+  },
+  {
+    name: 'MGMT 1001H',
+    subtitle: 'Honors: Contemporary Management (3.0 cr)'
+  },
+  {
+    name: 'MGMT 3001',
+    subtitle: 'Fundamentals of Management (3.0 cr)'
+  },
+]
+const corprespo = [
+  {
+    name: 'MGMT 1005',
+    subtitle: 'Corporate Responsibility and Ethics (3.0 cr)'
+  },
+  {
+    name: 'MGMT 1005H',
+    subtitle: 'Corporate Responsibility and Ethics (3.0 cr)'
+  },
+]
+const psychology = [
+  {
+    name: 'PSY 1001',
+    subtitle: 'Introduction to Psychology (4.0 cr)'
+  },
+  {
+    name: 'PSY 1001H',
+    subtitle: 'Honors Introduction to Psychology (4.0 cr)'
+  },
+]
+const careerskills = [
+  {
+    name: 'BA 3000',
+    subtitle: 'Career Skills (1.0 cr)'
+  },
+]
+const Immersion = [
+  {
+    name: 'MKTG 3001',
+    subtitle: 'Principles of Marketing (3.0 cr)'
+  },
+  {
+    name: 'SCO 3001',
+    subtitle: 'Introduction to Operations Management (3.0 cr)'
+  },
+  {
+    name: 'MGMT 3004',
+    subtitle: 'Business Strategy (3.0 cr)'
+  }
+]
+const Immersionoptional = [
+  {
+    name: 'FINA 3001',
+    subtitle: 'Finance Fundamentals (3.0 cr)'
+  },
+  {
+    name: 'FINA 3001H',
+    subtitle: 'Honors: Finance Fundamentals (3.0 cr)'
+  }
+]
+const InfoSys = [
+  {
+    name: 'IDSC 3001',
+    subtitle: 'Introduction to Information Technology in Business (3.0 cr)'
+  },
+  {
+    name: 'IDSC 3001H',
+    subtitle: 'Honors: Introduction to Information Technology in Business (3.0 cr)'
+  },
+]
+const HumanResources = [
+  {
+    name: 'HRIR 3021',
+    subtitle: 'Human Resource Management and Industrial Relations (3.0 cr)'
+  },
+  {
+    name: 'HRIR 3021H',
+    subtitle: 'Honors: Human Resource Management and Industrial Relations (3.0 cr)'
+  },
+  {
+    name: 'IBUS 3021',
+    subtitle: 'Human Resources Management in Austrailia (4.0 cr)'
+  },
+]
+const managerialaccount = [
+  {
+    name: 'ACCT 3001',
+    subtitle: 'Introduction to Management Accounting (3.0 cr)'
+  },
+  {
+    name: 'IBUS 3002',
+    subtitle: 'Managerial Accounting in Argentina and Chile (4.0 cr)'
+  },
+]
+const businesscomm = [
+  {
+    name: 'MGMT 3033W',
+    subtitle: 'Business Communication (3.0 cr)'
+  },
+  {
+    name: 'IBUS 3033W',
+    subtitle: 'Business Communication in Spain (4.0 cr)'
+  },
+]
+const MajorCourses = [
+  {
+    name: 'ACCT 5101',
+    subtitle: 'Intermediate Accounting I (4.0 cr)'
+  },
+  {
+    name: 'ACCT 5102',
+    subtitle: 'Intermediate Accounting II (4.0 cr)'
+  },
+  {
+    name: 'ACCT 5125W',
+    subtitle: 'Auditing Principles and Procedures (4.0 cr)'
+  },
+  {
+    name: 'ACCt 5135',
+    subtitle: 'Fundamentals of Federal Income Tax (4.0 cr)'
+  },
+  {
+    name: 'ACCT 5201',
+    subtitle: 'Intermediate Management Accounting (2.0 cr)'
+  },
+  {
+    name: 'BLAW 3058',
+    subtitle: 'The Law of Contracts and Agency (4.0 cr)'
+  },
+  {
+    name: 'ACCT 3150',
+    subtitle: 'Role of the Accountant in Today\'s Finance Function (1.0 cr)'
+  },
+]
+const Electives = [
+  {
+    name: 'ACCT 5160',
+    subtitle: 'Financial Statement Analysis (2.0 cr)'
+  },
+  {
+    name: 'ACCT 5180',
+    subtitle: 'Consolidations and Advanced Reporting (2.0 cr)'
+  },
+  {
+    name: 'ACCT 5236',
+    subtitle: 'Introduction to Taxation of Business (2.0 cr)'
+  },
+  {
+    name: 'ACCT 5310',
+    subtitle: 'International Accounting (2.0 cr)'
+  },
+  {
+    name: 'IDSC 4411',
+    subtitle: 'Information Technology Governance and Assurance (2.0 cr)'
+  },
+  {
+    name: 'ACCT 5126',
+    subtitle: 'Internal Auditing (4.0 cr)'
   },
 ]
 
@@ -239,7 +405,150 @@ class DegreeRequirements extends Component {
             <Text style={styles.welcome}>Management (Pick 1)</Text>
             <List containerStyle={{marginTop: 0}}>
               {
-                accounting.map((item, i) => (
+                management.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Corporate Responsibility & Ethics (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                corprespo.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Psychology (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                psychology.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Career Skills</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                careerskills.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Immersion Core</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                Immersion.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Immersion Core (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                Immersionoptional.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Information Systems (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                InfoSys.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Human Resources (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                HumanResources.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Managerial Accounting (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                managerialaccount.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Business Communications (Pick 1)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                businesscomm.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.degreestyle}>Major Courses</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                MajorCourses.map((item, i) => (
+                  <ListItem
+                    key={i}
+                    title={item.name}
+                    subtitle={item.subtitle}
+                    onPress={() => this.props.navigator(item.name)}
+                  />
+                ))
+              }
+            </List>
+            <Text style={styles.welcome}>Electives (take 4 or more credits of the following)</Text>
+            <List containerStyle={{marginTop: 0}}>
+              {
+                Electives.map((item, i) => (
                   <ListItem
                     key={i}
                     title={item.name}
@@ -360,6 +669,8 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1101-002')}
+
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -369,6 +680,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
                     />
                   </View>
                 </View>
@@ -410,6 +722,8 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1101-033')}
+
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -419,6 +733,8 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+
                     />
                   </View>
                 </View>
@@ -454,6 +770,8 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
+                      onPress={() => this.props.asyncStore('ECON 1101-034')}
+
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -463,6 +781,8 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+
                     />
                   </View>
                 </View>
