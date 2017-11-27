@@ -66,7 +66,7 @@ export default class DrawerMenu extends Component {
                         primaryText: 'Nathan Kaufman',
                         secondaryText: 'kaufm260@umn.edu',
                     },
-                      rightElement: 'arrow-drop-down',
+                      // rightElement: 'arrow-drop-down',
                     }}
                 />
               </Drawer.Header>
