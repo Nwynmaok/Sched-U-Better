@@ -10,9 +10,77 @@ import {
 } from 'react-native';
 import { COLOR, ThemeProvider, Toolbar } from 'react-native-material-ui';
 import Container from './Container';
+import { StackNavigator } from 'react-navigation';
 import TabNavigator from 'react-native-tab-navigator';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { List, ListItem, Card, Button } from 'react-native-elements';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  header: {
+    backgroundColor: '#455A64',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  topdegreestyle: {
+    fontSize: 30,
+    textAlign: 'center',
+    margin: 10,
+  },
+  degreestyle: {
+    fontSize: 30,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+  flexcontainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonContainer: {
+    flex: 1,
+  },
+  leftContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+  },
+  rightContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center'
+  },
+  flextext: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  cardcontent: {
+    backgroundColor: '#d3d3d3',
+    borderWidth: 2,
+    borderColor: '#000000',
+    margin: 5
+  },
+  cardcontenttext: {
+    margin: 2
+  }
+});
 
 const list = [
   {
@@ -81,22 +149,30 @@ class MajorSearch extends Component {
 
   render() {
     return(
+      <ThemeProvider uiTheme={uiTheme}>
+        <Container>
+          <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+          <Toolbar
+            leftElement="menu"
+            onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+            centerElement="Explore Degrees"
+          />
       <ScrollView >
-        <View style={{paddingTop: 29}}>
-        <List >
+        <List containerStyle={{marginTop: 0}}>
           {
             list.map((item, i) => (
               <ListItem
                 key={i}
                 title={item.name}
                 subtitle={item.subtitle}
-                onPress={() => this.props.handler(item.view)}
+                onPress={() => this.props.navigation.navigate('DegreeRequirements', { selectedDegree: item.view })}
               />
             ))
           }
         </List>
-        </View>
       </ScrollView>
+    </Container>
+  </ThemeProvider>
     );
   }
 }
@@ -330,9 +406,17 @@ const Electives = [
 
 class DegreeRequirements extends Component {
   render() {
-    switch (this.props.selectedDegree) {
+    switch (this.props.navigation.state.params.selectedDegree) {
       case 'Accounting':
         return (
+          <ThemeProvider uiTheme={uiTheme}>
+            <Container>
+              <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+              <Toolbar
+                leftElement="menu"
+                onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+                centerElement="Explore Degrees"
+              />
           <ScrollView>
             <Text style={styles.topdegreestyle}>Accounting</Text>
             <Text style={styles.degreestyle}>Admission Requirements</Text>
@@ -344,7 +428,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -357,7 +441,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -370,7 +454,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -383,7 +467,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -396,7 +480,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -410,7 +494,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -423,7 +507,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -436,7 +520,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -449,7 +533,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -462,7 +546,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -475,7 +559,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -488,7 +572,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -501,7 +585,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -514,7 +598,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -527,7 +611,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -540,7 +624,7 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
@@ -553,36 +637,101 @@ class DegreeRequirements extends Component {
                     key={i}
                     title={item.name}
                     subtitle={item.subtitle}
-                    onPress={() => this.props.navigator(item.name)}
+                    onPress={() => this.props.navigation.navigate('Courses', { selectedCourse: item.name })}
                   />
                 ))
               }
             </List>
           </ScrollView>
+        </Container>
+      </ThemeProvider>
         );
       case 'init':
         return(
+          <ThemeProvider uiTheme={uiTheme}>
+            <Container>
+              <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+              <Toolbar
+                leftElement="menu"
+                onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+                centerElement="Explore Degrees"
+              />
           <ScrollView>
             <Text style={styles.topdegreestyle}>
             Select a degree from the degree listings
             </Text>
           </ScrollView>
+        </Container>
+      </ThemeProvider>
         );
       default:
         return (
+          <ThemeProvider uiTheme={uiTheme}>
+            <Container>
+              <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+              <Toolbar
+                leftElement="menu"
+                onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+                centerElement="Explore Degrees"
+              />
           <ScrollView>
             <Text style={styles.topdegreestyle}>Degree Requirements Unavailable</Text>
           </ScrollView>
+        </Container>
+      </ThemeProvider>
         )
     }
   }
 }
 
 class Courses extends Component {
+  constructor(props) {
+    super(props)
+    this.asyncStore = this.asyncStore.bind(this)
+    this.asyncAddSchedule = this.asyncAddSchedule.bind(this)
+  }
+  asyncAddSchedule(title, day, start, end, location) {
+    let courseinfo = {
+       title: title, day: day, start: start, end: end, location: location
+    }
+    try {
+      AsyncStorage.getItem('schedule')
+        .then(schedule => {
+          schedule = schedule == null ? [] : JSON.parse(schedule)
+          schedule = Array.isArray(schedule) ? schedule : [schedule]
+          schedule.push(courseinfo)
+          return AsyncStorage.setItem('schedule', JSON.stringify(schedule))
+        })
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  asyncStore(course) {
+    try {
+      AsyncStorage.getItem('courses')
+        .then(saved => {
+          saved = saved == null ? [] : JSON.parse(saved)
+          saved = Array.isArray(saved) ? saved : [saved]
+          saved.push(course)
+          return AsyncStorage.setItem('courses', JSON.stringify(saved))
+        })
+    } catch (error) {
+      console.log(error);
+    }
+  }
   render() {
-    switch (this.props.selectedCourse) {
+    switch (this.props.navigation.state.params.selectedCourse) {
       case 'ACCT 2050':
       return(
+        <ThemeProvider uiTheme={uiTheme}>
+          <Container>
+            <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+            <Toolbar
+              leftElement="menu"
+              onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+              centerElement="Explore Degrees"
+            />
         <ScrollView>
           <Text style={styles.topdegreestyle}>
             ACCT 2050
@@ -623,7 +772,7 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='SAVE'
-                    onPress={() => this.props.asyncStore('ACCT 2050-001')}
+                    onPress={() => this.asyncStore('ACCT 2050-001')}
                   />
                 </View>
                 <View style={styles.buttonContainer}>
@@ -633,16 +782,26 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='Schedule'
-                    onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                    onPress={() => this.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
                   />
                 </View>
               </View>
             </Card>
           </View>
         </ScrollView>
+      </Container>
+    </ThemeProvider>
       );
       case 'SCO 2550':
       return(
+        <ThemeProvider uiTheme={uiTheme}>
+          <Container>
+            <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+            <Toolbar
+              leftElement="menu"
+              onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+              centerElement="Explore Degrees"
+            />
         <ScrollView>
           <Text style={styles.topdegreestyle}>
             SCO 2550
@@ -683,7 +842,7 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='SAVE'
-                    onPress={() => this.props.asyncStore('SCO 2550-001')}
+                    onPress={() => this.asyncStore('SCO 2550-001')}
                   />
                 </View>
                 <View style={styles.buttonContainer}>
@@ -693,16 +852,26 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='Schedule'
-                    onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                    onPress={() => this.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
                   />
                 </View>
               </View>
             </Card>
           </View>
         </ScrollView>
+      </Container>
+    </ThemeProvider>
       );
       case 'MATH 1142':
       return(
+        <ThemeProvider uiTheme={uiTheme}>
+          <Container>
+            <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+            <Toolbar
+              leftElement="menu"
+              onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+              centerElement="Explore Degrees"
+            />
         <ScrollView>
           <Text style={styles.topdegreestyle}>
             MATH 1142
@@ -740,7 +909,7 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='SAVE'
-                    onPress={() => this.props.asyncStore('MATH 1142-001')}
+                    onPress={() => this.asyncStore('MATH 1142-001')}
                   />
                 </View>
                 <View style={styles.buttonContainer}>
@@ -750,16 +919,26 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='Schedule'
-                    onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                    onPress={() => this.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
                   />
                 </View>
               </View>
             </Card>
           </View>
         </ScrollView>
+      </Container>
+    </ThemeProvider>
       );
       case 'ECON 1102':
       return(
+        <ThemeProvider uiTheme={uiTheme}>
+          <Container>
+            <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+            <Toolbar
+              leftElement="menu"
+              onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+              centerElement="Explore Degrees"
+            />
         <ScrollView>
           <Text style={styles.topdegreestyle}>
             ECON 1102
@@ -800,7 +979,7 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='SAVE'
-                    onPress={() => this.props.asyncStore('ECON 1102-001')}
+                    onPress={() => this.asyncStore('ECON 1102-001')}
                   />
                 </View>
                 <View style={styles.buttonContainer}>
@@ -810,16 +989,26 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='Schedule'
-                    onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                    onPress={() => this.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
                   />
                 </View>
               </View>
             </Card>
           </View>
         </ScrollView>
+      </Container>
+    </ThemeProvider>
       );
       case 'ECON 1101':
         return(
+          <ThemeProvider uiTheme={uiTheme}>
+            <Container>
+              <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+              <Toolbar
+                leftElement="menu"
+                onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+                centerElement="Explore Degrees"
+              />
           <ScrollView>
             <Text style={styles.topdegreestyle}>
               ECON 1101
@@ -860,7 +1049,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-001')}
+                      onPress={() => this.asyncStore('ECON 1101-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -870,7 +1059,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                      onPress={() => this.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
                     />
                   </View>
                 </View>
@@ -906,7 +1095,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-002')}
+                      onPress={() => this.asyncStore('ECON 1101-002')}
 
                     />
                   </View>
@@ -917,7 +1106,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                      onPress={() => this.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
                     />
                   </View>
                 </View>
@@ -959,7 +1148,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-033')}
+                      onPress={() => this.asyncStore('ECON 1101-033')}
 
                     />
                   </View>
@@ -970,7 +1159,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                      onPress={() => this.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
 
                     />
                   </View>
@@ -1007,7 +1196,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-034')}
+                      onPress={() => this.asyncStore('ECON 1101-034')}
 
                     />
                   </View>
@@ -1018,7 +1207,7 @@ class Courses extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                      onPress={() => this.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
 
                     />
                   </View>
@@ -1026,22 +1215,44 @@ class Courses extends Component {
               </Card>
             </View>
           </ScrollView>
+        </Container>
+      </ThemeProvider>
         );
       case 'init':
-        return(
+        return (
+        <ThemeProvider uiTheme={uiTheme}>
+          <Container>
+            <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+            <Toolbar
+              leftElement="menu"
+              onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+              centerElement="Explore Degrees"
+            />
           <ScrollView>
             <Text style={styles.topdegreestyle}>
             Select a course from degree requirements
             </Text>
           </ScrollView>
+        </Container>
+      </ThemeProvider>
         );
       default:
         return(
+          <ThemeProvider uiTheme={uiTheme}>
+            <Container>
+              <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+              <Toolbar
+                leftElement="menu"
+                onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+                centerElement="Explore Degrees"
+              />
           <ScrollView>
             <Text style={styles.topdegreestyle}>
             Course Information Unavailable
             </Text>
           </ScrollView>
+        </Container>
+      </ThemeProvider>
         );
     }
   }
@@ -1060,166 +1271,113 @@ const uiTheme = {
   },
 };
 
-class ExploreDegrees extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { selectedTab: 'MajorSearch', selectedDegree: 'init', selectedCourse: 'init'}
-    this.handler = this.handler.bind(this)
-    this.navigator = this.navigator.bind(this)
-    this.asyncStore = this.asyncStore.bind(this)
-    this.asyncAddSchedule = this.asyncAddSchedule.bind(this)
+const degreestack = StackNavigator({
+    MajorSearch: { screen: MajorSearch },
+    DegreeRequirements: { screen: DegreeRequirements },
+    Courses: { screen: Courses },
+  },
+  {
+    headerMode: 'none',
+    // cardStyle: { paddingTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight },
   }
+);
 
-  handler(view) {
-    this.setState({
-      selectedTab: 'DegreeRequirements',
-      selectedDegree: view
-    });
-  }
+export default degreestack;
 
-  navigator(course) {
-    this.setState({
-      selectedTab: 'Courses',
-      selectedCourse: course
-    })
-  }
 
-  asyncAddSchedule(title, day, start, end, location) {
-    let courseinfo = {
-       title: title, day: day, start: start, end: end, location: location
-    }
-    try {
-      AsyncStorage.getItem('schedule')
-        .then(schedule => {
-          schedule = schedule == null ? [] : JSON.parse(schedule)
-          schedule = Array.isArray(schedule) ? schedule : [schedule]
-          schedule.push(courseinfo)
-          return AsyncStorage.setItem('schedule', JSON.stringify(schedule))
-        })
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
-  asyncStore(course) {
-    try {
-      AsyncStorage.getItem('courses')
-        .then(saved => {
-          saved = saved == null ? [] : JSON.parse(saved)
-          saved = Array.isArray(saved) ? saved : [saved]
-          saved.push(course)
-          return AsyncStorage.setItem('courses', JSON.stringify(saved))
-        })
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
-  render() {
-    return (
-      <ThemeProvider uiTheme={uiTheme}>
-        <Container>
-          <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
-          <Toolbar
-            leftElement="menu"
-            onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
-            centerElement="Explore Degrees"
-          />
-        <TabNavigator tabBarStyle={{top:0}} tabBarShadowStyle={{bottom:0, top:null}} style={{marginBottom:-50}}>
-            <TabNavigator.Item
-              titleStyle={{opacity: 0}}
-              renderIcon={() => <Icon style={{top: 5}} name="list-alt" size={30} color="#000000" />}
-              renderSelectedIcon={() => <Icon style={{top: 5}} name="list-alt" size={30} color="#7a0019" />}
-              selected={this.state.selectedTab === 'MajorSearch'}
-              onPress={() => this.setState({ selectedTab: 'MajorSearch' })}>
-              <MajorSearch handler={this.handler}/>
-            </TabNavigator.Item>
-            <TabNavigator.Item
-              renderIcon={() => <Icon style={{top: 5}} name="check-square-o" size={30} color="#000000" />}
-              renderSelectedIcon={() => <Icon style={{top: 5}} name="check-square-o" size={30} color="#7a0019" />}
-              selected={this.state.selectedTab === 'DegreeRequirements'}
-              onPress={() => this.setState({ selectedTab: 'DegreeRequirements' })}>
-              <DegreeRequirements navigator={this.navigator} selectedDegree={this.state.selectedDegree}/>
-            </TabNavigator.Item>
-            <TabNavigator.Item
-              renderIcon={() => <Icon style={{top: 5}} name="book" size={30} color="#000000" />}
-              renderSelectedIcon={() => <Icon style={{top: 5}} name="book" size={30} color="#7a0019" />}
-              selected={this.state.selectedTab === 'Courses'}
-              onPress={() => this.setState({ selectedTab: 'Courses' })}>
-              <Courses selectedCourse={this.state.selectedCourse} asyncStore={this.asyncStore} asyncAddSchedule={this.asyncAddSchedule}/>
-            </TabNavigator.Item>
-          </TabNavigator>
-        </Container>
-      </ThemeProvider>
-    );
-  }
-}
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  header: {
-    backgroundColor: '#455A64',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  topdegreestyle: {
-    paddingTop: 50,
-    fontSize: 30,
-    textAlign: 'center',
-    margin: 10,
-  },
-  degreestyle: {
-    fontSize: 30,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  flexcontainer: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  buttonContainer: {
-    flex: 1,
-  },
-  leftContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-  },
-  rightContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center'
-  },
-  flextext: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-  cardcontent: {
-    backgroundColor: '#d3d3d3',
-    borderWidth: 2,
-    borderColor: '#000000',
-    margin: 5
-  },
-  cardcontenttext: {
-    margin: 2
-  }
-});
-
-export default ExploreDegrees;
+// class ExploreDegrees extends Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = { selectedTab: 'MajorSearch', selectedDegree: 'init', selectedCourse: 'init'}
+//     this.handler = this.handler.bind(this)
+//     this.navigator = this.navigator.bind(this)
+//     this.asyncStore = this.asyncStore.bind(this)
+//     this.asyncAddSchedule = this.asyncAddSchedule.bind(this)
+//   }
+//
+//   handler(view) {
+//     this.setState({
+//       selectedTab: 'DegreeRequirements',
+//       selectedDegree: view
+//     });
+//   }
+//
+//   navigator(course) {
+//     this.setState({
+//       selectedTab: 'Courses',
+//       selectedCourse: course
+//     })
+//   }
+//
+//   asyncAddSchedule(title, day, start, end, location) {
+//     let courseinfo = {
+//        title: title, day: day, start: start, end: end, location: location
+//     }
+//     try {
+//       AsyncStorage.getItem('schedule')
+//         .then(schedule => {
+//           schedule = schedule == null ? [] : JSON.parse(schedule)
+//           schedule = Array.isArray(schedule) ? schedule : [schedule]
+//           schedule.push(courseinfo)
+//           return AsyncStorage.setItem('schedule', JSON.stringify(schedule))
+//         })
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+//
+//   asyncStore(course) {
+//     try {
+//       AsyncStorage.getItem('courses')
+//         .then(saved => {
+//           saved = saved == null ? [] : JSON.parse(saved)
+//           saved = Array.isArray(saved) ? saved : [saved]
+//           saved.push(course)
+//           return AsyncStorage.setItem('courses', JSON.stringify(saved))
+//         })
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+//
+//   render() {
+//     return (
+//       <ThemeProvider uiTheme={uiTheme}>
+//         <Container>
+//           <StatusBar backgroundColor="rgba(0, 0, 0, 0.2)" translucent />
+//           <Toolbar
+//             leftElement="menu"
+//             onLeftElementPress={() => this.props.navigation.navigate('DrawerOpen')}
+//             centerElement="Explore Degrees"
+//           />
+//         <TabNavigator tabBarStyle={{top:0}} tabBarShadowStyle={{bottom:0, top:null}} style={{marginBottom:-50}}>
+//             <TabNavigator.Item
+//               titleStyle={{opacity: 0}}
+//               renderIcon={() => <Icon style={{top: 5}} name="list-alt" size={30} color="#000000" />}
+//               renderSelectedIcon={() => <Icon style={{top: 5}} name="list-alt" size={30} color="#7a0019" />}
+//               selected={this.state.selectedTab === 'MajorSearch'}
+//               onPress={() => this.setState({ selectedTab: 'MajorSearch' })}>
+//               <MajorSearch handler={this.handler}/>
+//             </TabNavigator.Item>
+//             <TabNavigator.Item
+//               renderIcon={() => <Icon style={{top: 5}} name="check-square-o" size={30} color="#000000" />}
+//               renderSelectedIcon={() => <Icon style={{top: 5}} name="check-square-o" size={30} color="#7a0019" />}
+//               selected={this.state.selectedTab === 'DegreeRequirements'}
+//               onPress={() => this.setState({ selectedTab: 'DegreeRequirements' })}>
+//               <DegreeRequirements navigator={this.navigator} selectedDegree={this.state.selectedDegree}/>
+//             </TabNavigator.Item>
+//             <TabNavigator.Item
+//               renderIcon={() => <Icon style={{top: 5}} name="book" size={30} color="#000000" />}
+//               renderSelectedIcon={() => <Icon style={{top: 5}} name="book" size={30} color="#7a0019" />}
+//               selected={this.state.selectedTab === 'Courses'}
+//               onPress={() => this.setState({ selectedTab: 'Courses' })}>
+//               <Courses selectedCourse={this.state.selectedCourse} asyncStore={this.asyncStore} asyncAddSchedule={this.asyncAddSchedule}/>
+//             </TabNavigator.Item>
+//           </TabNavigator>
+//         </Container>
+//       </ThemeProvider>
+//     );
+//   }
+// }

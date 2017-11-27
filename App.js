@@ -3,7 +3,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import App from './src/drawer';
 
-class Main extends React.Component {
+export default class Main extends React.Component {
 
   render() {
     return (
@@ -13,4 +13,3 @@ class Main extends React.Component {
 }
 
 Expo.registerRootComponent(App);
-export default Main;
