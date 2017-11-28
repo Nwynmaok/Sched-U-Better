@@ -176,7 +176,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -564,7 +564,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -632,7 +632,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -700,7 +700,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -768,7 +768,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -836,7 +836,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -904,7 +904,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -972,7 +972,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                       />
                     </View>
@@ -1040,7 +1040,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                       />
                     </View>
@@ -1108,7 +1108,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -1176,7 +1176,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -1202,7 +1202,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1241,7 +1241,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1267,7 +1267,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1306,7 +1306,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1332,7 +1332,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1371,7 +1371,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1397,7 +1397,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1436,7 +1436,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1462,7 +1462,7 @@ class CourseSearch extends Component {
                 <View style={styles.flextext}>
                   <View style={styles.leftContainer}>
                     <Text style={[styles.text, {textAlign: 'left'}]}>
-                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                     </Text>
                   </View>
                   <View style={styles.rightContainer}>
@@ -1501,7 +1501,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                     />
                   </View>
@@ -1527,7 +1527,7 @@ class CourseSearch extends Component {
                 <View style={styles.flextext}>
                   <View style={styles.leftContainer}>
                     <Text style={[styles.text, {textAlign: 'left'}]}>
-                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                     </Text>
                   </View>
                   <View style={styles.rightContainer}>
@@ -1566,7 +1566,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                     />
                   </View>
@@ -1592,7 +1592,7 @@ class CourseSearch extends Component {
                 <View style={styles.flextext}>
                   <View style={styles.leftContainer}>
                     <Text style={[styles.text, {textAlign: 'left'}]}>
-                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                     </Text>
                   </View>
                   <View style={styles.rightContainer}>
@@ -1631,7 +1631,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                     />
                   </View>
@@ -1699,7 +1699,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -1767,7 +1767,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -1829,7 +1829,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                     />
                   </View>
@@ -1897,7 +1897,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                     />
                   </View>
@@ -1958,7 +1958,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                     />
                   </View>
@@ -2024,7 +2024,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -2090,7 +2090,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -2137,7 +2137,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                     />
                   </View>
@@ -2190,7 +2190,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                     />
                   </View>
@@ -2237,7 +2237,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                     />
                   </View>
@@ -2303,7 +2303,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                       />
                     </View>
@@ -2350,7 +2350,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                       />
                     </View>
@@ -2403,7 +2403,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                       />
                     </View>
@@ -2450,7 +2450,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                       />
                     </View>
@@ -2504,7 +2504,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                       />
                     </View>
@@ -2570,7 +2570,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2617,7 +2617,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                         />
                       </View>
@@ -2670,7 +2670,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                         />
                       </View>
@@ -2717,7 +2717,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                         />
                       </View>
@@ -2771,7 +2771,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2837,7 +2837,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2884,7 +2884,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                         />
                       </View>
@@ -2937,7 +2937,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                         />
                       </View>
@@ -2984,7 +2984,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                         />
                       </View>
@@ -3038,7 +3038,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -3135,8 +3135,8 @@ class Scheduler extends Component {
         }
       }
       let Msorted = M.sort(function(first, second) {
-        var a = first.start;
-        var b = second.start;
+        var a = Number(first.start);
+        var b = Number(second.start);
         if (a > b) {
           return 1;
         } else if (a < b) {
@@ -3146,8 +3146,8 @@ class Scheduler extends Component {
         }
       });
       let Tusorted = Tu.sort(function(first, second) {
-        var a = first.start;
-        var b = second.start;
+        var a = Number(first.start);
+        var b = Number(second.start);
         if (a > b) {
           return 1;
         } else if (a < b) {
@@ -3157,8 +3157,8 @@ class Scheduler extends Component {
         }
       });
       let Wsorted = W.sort(function(first, second) {
-        var a = first.start;
-        var b = second.start;
+        var a = Number(first.start);
+        var b = Number(second.start);
         if (a > b) {
           return 1;
         } else if (a < b) {
@@ -3168,8 +3168,8 @@ class Scheduler extends Component {
         }
       });
       let Thsorted = Th.sort(function(first, second) {
-        var a = first.start;
-        var b = second.start;
+        var a = Number(first.start);
+        var b = Number(second.start);
         if (a > b) {
           return 1;
         } else if (a < b) {
@@ -3179,8 +3179,8 @@ class Scheduler extends Component {
         }
       });
       let Fsorted = F.sort(function(first, second) {
-        var a = first.start;
-        var b = second.start;
+        var a = Number(first.start);
+        var b = Number(second.start);
         if (a > b) {
           return 1;
         } else if (a < b) {
@@ -3191,63 +3191,237 @@ class Scheduler extends Component {
       });
       for (let i = 0; i < Msorted.length; i++) {
         let starttime = Msorted[i].start;
-        let endttime = Msorted[i].end;
+        starttime = starttime.split('.');
+        starthour = starttime[0];
+        startmin = starttime[1];
+        let endtime = Msorted[i].end;
+        endtime = endtime.split('.');
+        endhour = endtime[0];
+        endmin = endtime[1];
         let title = Msorted[i].title;
         let location = Msorted[i].location
-        Mlist.push(
-          {
-            name: title,
-            subtitle: starttime + "-" + endttime + " " + location
-          }
-        );
+        if (i > 0 && (Number(Msorted[i].start) < Number(Msorted[i-1].end))) {
+          let oldtitle = Msorted[i-1].title;
+          let oldstart = Msorted[i-1].start;
+          let oldend = Msorted[i-1].end;
+          oldstart = oldstart.split('.');
+          oldstarthour = oldstart[0];
+          oldstartmin = oldstart[1];
+          oldend = oldend.split('.');
+          oldendhour = oldend[0];
+          oldendmin = oldend[1];
+          Mlist.pop();
+          Mlist.push(
+            {
+              name: oldtitle,
+              subtitle: 'TIME CONFLICT ' + oldstarthour + ":" + oldstartmin + "-" + oldendhour + ":" + oldendmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+          Mlist.push(
+            {
+              name: title,
+              subtitle: 'TIME CONFLICT ' + starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+        } else {
+          Mlist.push(
+            {
+              name: title,
+              subtitle: starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location
+            }
+          );
+        }
       }
       for (let i = 0; i < Tusorted.length; i++) {
         let starttime = Tusorted[i].start;
-        let endttime = Tusorted[i].end;
+        starttime = starttime.split('.');
+        starthour = starttime[0];
+        startmin = starttime[1];
+        let endtime = Tusorted[i].end;
+        endtime = endtime.split('.');
+        endhour = endtime[0];
+        endmin = endtime[1];
         let title = Tusorted[i].title;
         let location = Tusorted[i].location
-        Tulist.push(
-          {
-            name: title,
-            subtitle: starttime + "-" + endttime + " " + location
-          }
-        );
+        if (i > 0 && (Number(Tusorted[i].start) < Number(Tusorted[i-1].end))) {
+          let oldtitle = Tusorted[i-1].title;
+          let oldstart = Tusorted[i-1].start;
+          let oldend = Tusorted[i-1].end;
+          oldstart = oldstart.split('.');
+          oldstarthour = oldstart[0];
+          oldstartmin = oldstart[1];
+          oldend = oldend.split('.');
+          oldendhour = oldend[0];
+          oldendmin = oldend[1];
+          Tulist.pop();
+          Tulist.push(
+            {
+              name: oldtitle,
+              subtitle: 'TIME CONFLICT ' + oldstarthour + ":" + oldstartmin + "-" + oldendhour + ":" + oldendmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+          Tulist.push(
+            {
+              name: title,
+              subtitle: 'TIME CONFLICT ' + starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+        } else {
+          Tulist.push(
+            {
+              name: title,
+              subtitle: starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location
+            }
+          );
+        }
       }
       for (let i = 0; i < Wsorted.length; i++) {
         let starttime = Wsorted[i].start;
-        let endttime = Wsorted[i].end;
+        starttime = starttime.split('.');
+        starthour = starttime[0];
+        startmin = starttime[1];
+        let endtime = Wsorted[i].end;
+        endtime = endtime.split('.');
+        endhour = endtime[0];
+        endmin = endtime[1];
         let title = Wsorted[i].title;
         let location = Wsorted[i].location
-        Wlist.push(
-          {
-            name: title,
-            subtitle: starttime + "-" + endttime + " " + location
-          }
-        );
+        if (i > 0 && (Number(Wsorted[i].start) < Number(Wsorted[i-1].end))) {
+          let oldtitle = Wsorted[i-1].title;
+          let oldstart = Wsorted[i-1].start;
+          let oldend = Wsorted[i-1].end;
+          oldstart = oldstart.split('.');
+          oldstarthour = oldstart[0];
+          oldstartmin = oldstart[1];
+          oldend = oldend.split('.');
+          oldendhour = oldend[0];
+          oldendmin = oldend[1];
+          Wlist.pop();
+          Wlist.push(
+            {
+              name: oldtitle,
+              subtitle: 'TIME CONFLICT ' + oldstarthour + ":" + oldstartmin + "-" + oldendhour + ":" + oldendmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+          Wlist.push(
+            {
+              name: title,
+              subtitle: 'TIME CONFLICT ' + starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+        } else {
+          Wlist.push(
+            {
+              name: title,
+              subtitle: starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location
+            }
+          );
+        }
       }
       for (let i = 0; i < Thsorted.length; i++) {
         let starttime = Thsorted[i].start;
-        let endttime = Thsorted[i].end;
+        starttime = starttime.split('.');
+        starthour = starttime[0];
+        startmin = starttime[1];
+        let endtime = Thsorted[i].end;
+        endtime = endtime.split('.');
+        endhour = endtime[0];
+        endmin = endtime[1];
         let title = Thsorted[i].title;
         let location = Thsorted[i].location
-        Thlist.push(
-          {
-            name: title,
-            subtitle: starttime + "-" + endttime + " " + location
-          }
-        );
+        if (i > 0 && (Number(Thsorted[i].start) < Number(Thsorted[i-1].end))) {
+          let oldtitle = Thsorted[i-1].title;
+          let oldstart = Thsorted[i-1].start;
+          let oldend = Thsorted[i-1].end;
+          oldstart = oldstart.split('.');
+          oldstarthour = oldstart[0];
+          oldstartmin = oldstart[1];
+          oldend = oldend.split('.');
+          oldendhour = oldend[0];
+          oldendmin = oldend[1];
+          Thlist.pop();
+          Thlist.push(
+            {
+              name: oldtitle,
+              subtitle: 'TIME CONFLICT ' + oldstarthour + ":" + oldstartmin + "-" + oldendhour + ":" + oldendmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+          Thlist.push(
+            {
+              name: title,
+              subtitle: 'TIME CONFLICT ' + starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+        } else {
+          Thlist.push(
+            {
+              name: title,
+              subtitle: starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location
+            }
+          );
+        }
       }
       for (let i = 0; i < Fsorted.length; i++) {
         let starttime = Fsorted[i].start;
-        let endttime = Fsorted[i].end;
-        let title = Fsorted[i].title;
+        starttime = starttime.split('.');
+        starthour = starttime[0];
+        startmin = starttime[1];
+        let endtime = Fsorted[i].end;
+        endtime = endtime.split('.');
+        endhour = endtime[0];
+        endmin = endtime[1];        let title = Fsorted[i].title;
         let location = Fsorted[i].location
-        Flist.push(
-          {
-            name: title,
-            subtitle: starttime + "-" + endttime + " " + location
-          }
-        );
+        if (i > 0 && (Number(Fsorted[i].start) < Number(Fsorted[i-1].end))) {
+          let oldtitle = Fsorted[i-1].title;
+          let oldstart = Fsorted[i-1].start;
+          let oldend = Fsorted[i-1].end;
+          oldstart = oldstart.split('.');
+          oldstarthour = oldstart[0];
+          oldstartmin = oldstart[1];
+          oldend = oldend.split('.');
+          oldendhour = oldend[0];
+          oldendmin = oldend[1];
+          Flist.pop();
+          Flist.push(
+            {
+              name: oldtitle,
+              subtitle: 'TIME CONFLICT ' + oldstarthour + ":" + oldstartmin + "-" + oldendhour + ":" + oldendmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+          Flist.push(
+            {
+              name: title,
+              subtitle: 'TIME CONFLICT ' + starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location,
+              icon: 'error',
+              color: '#ff0000'
+            }
+          );
+        } else {
+          Flist.push(
+            {
+              name: title,
+              subtitle: starthour + ":" + startmin + "-" + endhour + ":" + endmin + " " + location
+            }
+          );
+        }
       }
     }
 
@@ -3262,6 +3436,9 @@ class Scheduler extends Component {
                 title={item.name}
                 subtitle={item.subtitle}
                 onPress={() => this.props.handler(item.name)}
+                leftIcon={{name: item.icon, color: item.color}}
+                titleStyle={{color: item.color}}
+                subtitleStyle={{color: item.color}}
               />
             ))
           }
@@ -3275,6 +3452,9 @@ class Scheduler extends Component {
                 title={item.name}
                 subtitle={item.subtitle}
                 onPress={() => this.props.handler(item.name)}
+                leftIcon={{name: item.icon, color: item.color}}
+                titleStyle={{color: item.color}}
+                subtitleStyle={{color: item.color}}
               />
             ))
           }
@@ -3288,6 +3468,9 @@ class Scheduler extends Component {
                 title={item.name}
                 subtitle={item.subtitle}
                 onPress={() => this.props.handler(item.name)}
+                leftIcon={{name: item.icon, color: item.color}}
+                titleStyle={{color: item.color}}
+                subtitleStyle={{color: item.color}}
               />
             ))
           }
@@ -3301,7 +3484,9 @@ class Scheduler extends Component {
                 title={item.name}
                 subtitle={item.subtitle}
                 onPress={() => this.props.handler(item.name)}
-              />
+                leftIcon={{name: item.icon, color: item.color}}
+                titleStyle={{color: item.color}}
+                subtitleStyle={{color: item.color}}              />
             ))
           }
         </List>
@@ -3314,7 +3499,9 @@ class Scheduler extends Component {
                 title={item.name}
                 subtitle={item.subtitle}
                 onPress={() => this.props.handler(item.name)}
-              />
+                leftIcon={{name: item.icon, color: item.color}}
+                titleStyle={{color: item.color}}
+                subtitleStyle={{color: item.color}}              />
             ))
           }
         </List>
