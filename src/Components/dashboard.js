@@ -9,6 +9,7 @@ import {
   ScrollView,
   TextInput,
   TouchableOpacity,
+  ToastAndroid,
 } from 'react-native';
 import * as Colors from '../themes/colors';
 import { COLOR, ThemeProvider, Toolbar, BottomNavigation } from 'react-native-material-ui';
@@ -262,7 +263,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -334,7 +335,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -406,7 +407,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -478,7 +479,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -550,7 +551,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -622,7 +623,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -694,7 +695,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                       />
                     </View>
@@ -766,7 +767,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                        onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                       />
                     </View>
@@ -838,7 +839,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -910,7 +911,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], 8.00, 9.40, 'Carlson School of Management L-110')}
+                      onPress={() => this.props.asyncAddSchedule('SCO 2550-001', ['Tu','Th'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
                     />
                   </View>
@@ -940,7 +941,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -979,7 +980,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1009,7 +1010,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1048,7 +1049,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1078,7 +1079,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1117,7 +1118,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1147,7 +1148,7 @@ class CourseSearch extends Component {
                   <View style={styles.flextext}>
                     <View style={styles.leftContainer}>
                       <Text style={[styles.text, {textAlign: 'left'}]}>
-                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                        MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                       </Text>
                     </View>
                     <View style={styles.rightContainer}>
@@ -1186,7 +1187,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                        onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                       />
                     </View>
@@ -1216,7 +1217,7 @@ class CourseSearch extends Component {
                 <View style={styles.flextext}>
                   <View style={styles.leftContainer}>
                     <Text style={[styles.text, {textAlign: 'left'}]}>
-                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                     </Text>
                   </View>
                   <View style={styles.rightContainer}>
@@ -1255,7 +1256,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                     />
                   </View>
@@ -1285,7 +1286,7 @@ class CourseSearch extends Component {
                 <View style={styles.flextext}>
                   <View style={styles.leftContainer}>
                     <Text style={[styles.text, {textAlign: 'left'}]}>
-                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                     </Text>
                   </View>
                   <View style={styles.rightContainer}>
@@ -1324,7 +1325,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                     />
                   </View>
@@ -1354,7 +1355,7 @@ class CourseSearch extends Component {
                 <View style={styles.flextext}>
                   <View style={styles.leftContainer}>
                     <Text style={[styles.text, {textAlign: 'left'}]}>
-                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 18:00 - 20:05
+                      MATH 1142-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
                     </Text>
                   </View>
                   <View style={styles.rightContainer}>
@@ -1393,7 +1394,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], 18.00, 20.05, 'Lind Hall 302')}
+                      onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
                     />
                   </View>
@@ -1465,7 +1466,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -1537,7 +1538,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -1603,7 +1604,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                     />
                   </View>
@@ -1675,7 +1676,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                     />
                   </View>
@@ -1740,7 +1741,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                     />
                   </View>
@@ -1810,7 +1811,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -1880,7 +1881,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                     />
                   </View>
@@ -1927,7 +1928,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                     />
                   </View>
@@ -1980,7 +1981,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                     />
                   </View>
@@ -2027,7 +2028,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                     />
                   </View>
@@ -2097,7 +2098,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                       />
                     </View>
@@ -2144,7 +2145,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                       />
                     </View>
@@ -2197,7 +2198,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                       />
                     </View>
@@ -2244,7 +2245,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                       />
                     </View>
@@ -2298,7 +2299,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                        onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                       />
                     </View>
@@ -2368,7 +2369,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2415,7 +2416,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                         />
                       </View>
@@ -2468,7 +2469,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                         />
                       </View>
@@ -2515,7 +2516,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                         />
                       </View>
@@ -2569,7 +2570,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2639,7 +2640,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], 9.05, 9.55, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2686,7 +2687,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], 10.10, 11.00, 'Blegen Hall 415')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
 
                         />
                       </View>
@@ -2739,7 +2740,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], 16.00, 17.15, 'Blegen Hall 425')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
 
                         />
                       </View>
@@ -2786,7 +2787,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], 17.30, 18.20, 'Carlson School of Management L-126')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                         />
                       </View>
@@ -2840,7 +2841,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], 9.45, 11.00, 'Wiley Hall 175')}
+                          onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
 
                         />
                       </View>
@@ -2905,6 +2906,7 @@ class Dashboard extends Component {
   }
 
   asyncStore(course) {
+    ToastAndroid.show('Added ' + course + ' to dashboard', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('courses')
         .then(saved => {
@@ -2922,6 +2924,7 @@ class Dashboard extends Component {
     let courseinfo = {
        title: title, day: day, start: start, end: end, location: location
     }
+    ToastAndroid.show('Added ' + title + ' to schedule', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('schedule')
         .then(schedule => {
