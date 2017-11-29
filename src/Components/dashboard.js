@@ -9,6 +9,7 @@ import {
   ScrollView,
   TextInput,
   TouchableOpacity,
+  ToastAndroid,
 } from 'react-native';
 import * as Colors from '../themes/colors';
 import { COLOR, ThemeProvider, Toolbar, BottomNavigation } from 'react-native-material-ui';
@@ -2905,6 +2906,7 @@ class Dashboard extends Component {
   }
 
   asyncStore(course) {
+    ToastAndroid.show('Added ' + course + ' to dashboard', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('courses')
         .then(saved => {
@@ -2922,6 +2924,7 @@ class Dashboard extends Component {
     let courseinfo = {
        title: title, day: day, start: start, end: end, location: location
     }
+    ToastAndroid.show('Added ' + title + ' to schedule', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('schedule')
         .then(schedule => {

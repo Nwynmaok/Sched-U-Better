@@ -24,6 +24,7 @@ class CourseSearch extends Component {
   }
 
   asyncDelete(course) {
+    ToastAndroid.show('Removed ' + course + ' from schedule', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('schedule')
         .then(saved => {
@@ -3558,6 +3559,7 @@ class ScheduleBuilder extends Component {
   }
 
   asyncStore(course) {
+    ToastAndroid.show('Added ' + course + ' to dashboard', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('courses')
         .then(saved => {
@@ -3575,6 +3577,7 @@ class ScheduleBuilder extends Component {
     let courseinfo = {
        title: title, day: day, start: start, end: end, location: location
     }
+    ToastAndroid.show('Added ' + title + ' to schedule', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('schedule')
         .then(schedule => {

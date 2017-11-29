@@ -694,6 +694,7 @@ class Courses extends Component {
     let courseinfo = {
        title: title, day: day, start: start, end: end, location: location
     }
+    ToastAndroid.show('Added ' + title + ' to schedule', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('schedule')
         .then(schedule => {
@@ -708,6 +709,7 @@ class Courses extends Component {
   }
 
   asyncStore(course) {
+    ToastAndroid.show('Added ' + course + ' to dashboard', ToastAndroid.SHORT);
     try {
       AsyncStorage.getItem('courses')
         .then(saved => {
