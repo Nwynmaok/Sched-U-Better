@@ -7,6 +7,7 @@ import {
   View,
   ScrollView,
   AsyncStorage,
+  ToastAndroid,
 } from 'react-native';
 import { COLOR, ThemeProvider, Toolbar } from 'react-native-material-ui';
 import Container from './Container';
@@ -700,7 +701,16 @@ class Courses extends Component {
         .then(schedule => {
           schedule = schedule == null ? [] : JSON.parse(schedule)
           schedule = Array.isArray(schedule) ? schedule : [schedule]
-          schedule.push(courseinfo)
+          var found = false;
+          for(var i = 0; i < schedule.length; i++) {
+            if (schedule[i].title == title) {
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            schedule.push(courseinfo);
+          }
           return AsyncStorage.setItem('schedule', JSON.stringify(schedule))
         })
     } catch (error) {
