@@ -52,6 +52,449 @@ class CourseSearch extends Component {
     let selectedCourse = [];
     if (this.props.selectedCourse != 'init') {
       switch (this.props.selectedCourse) {
+        case 'APEC 1101-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1101-001{"\n"}Spring 2018{"\n"}Tu Th 1:30 - 2:45
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1101-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('APEC 1101-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
+          case 'APEC 1101H-001':
+              selectedCourse.push(
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Ruttan Hall B35
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: Honors student, proficiency in high school algebra
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('APEC 1101H-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'remove', type: 'font-awesome'}}
+                          backgroundColor='#ff0000'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='REMOVE'
+                          onPress={() => this.asyncDelete('APEC 1101H-001')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+
+            );
+            break;
+        case 'APEC 1102-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1102-001{"\n"}Spring 2018{"\n"}M W F 10:40 - 11:30
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Gary Cooper{"\n"}Capacity: 29/80
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: APEC 1101 or ECON 1101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Unemployment/inflation, measures of national income, macro models, fiscal policy/problems. Taxes and the national debt. Money/banking, monetary policy/problems. Poverty and income distribution. International trade and exchange rates. Economic growth/development.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1102-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('APEC 1102-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
+        case 'APEC 1102H-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Blegen Hall 120
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1102H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('APEC 1102H-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
+        case 'MATH 1271-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1271-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('MATH 1271-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
+        case 'MATH 1571H-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student and permission of University Honors Program
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('MATH 1571H-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
+        case 'MATH 1371-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Fraser Hall 101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1371-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('MATH 1371-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
+        case 'ACCT 2050H-001':
+            selectedCourse.push(
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Carlson School of Management 1-142
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('ACCT 2050H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'remove', type: 'font-awesome'}}
+                        backgroundColor='#ff0000'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='REMOVE'
+                        onPress={() => this.asyncDelete('ACCT 2050H-001')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+
+          );
+          break;
         case 'ACCT 2050-001':
             selectedCourse.push(
 
@@ -285,165 +728,6 @@ class CourseSearch extends Component {
 
           );
           break;
-        case 'ECON 1101-034':
-          selectedCourse.push(
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
-                    </Text>
-                  </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                    </Text>
-                  </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Associated Section: ECON 1101-033
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Carlson School of Management L-126
-                  </Text>
-
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-034')}
-                    />
-                  </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'remove', type: 'font-awesome'}}
-                      backgroundColor='#ff0000'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='REMOVE'
-                      onPress={() => this.asyncDelete('ECON 1101-034')}
-                    />
-                  </View>
-                </View>
-              </Card>
-            </View>
-          )
-          break;
-        case 'ECON 1101-033':
-          selectedCourse.push(
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
-                    </Text>
-                  </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                    </Text>
-                  </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Blegen Hall 425
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Prereq: knowledge of plane geometry and advanced algebra
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Notes: This course has common midterm exams that take place in the evening and a common final exam.
-                  </Text>
-
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-033')}
-                    />
-                  </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'remove', type: 'font-awesome'}}
-                      backgroundColor='#ff0000'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='REMOVE'
-                      onPress={() => this.asyncDelete('ECON 1101-033')}
-                    />
-                  </View>
-                </View>
-              </Card>
-            </View>
-          )
-          break;
-        case 'ECON 1101-002':
-          selectedCourse.push(
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
-                    </Text>
-                  </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
-                    </Text>
-                  </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Associated Section: ECON 1101-001
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Belegen Hall 415
-                  </Text>
-
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-002')}
-                    />
-                  </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'remove', type: 'font-awesome'}}
-                      backgroundColor='#ff0000'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='REMOVE'
-                      onPress={() => this.asyncDelete('ECON 1101-002')}
-                    />
-                  </View>
-                </View>
-              </Card>
-            </View>
-          )
-          break;
         case 'ECON 1101-001':
           selectedCourse.push(
             <View>
@@ -573,6 +857,55 @@ class CourseSearch extends Component {
                 </View>
               </Card>
             </View>
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management 1-142
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Honors
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.asyncStore('ACCT 2050H-001')}
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
 
           </ScrollView>
         );
@@ -641,6 +974,55 @@ class CourseSearch extends Component {
                 </View>
               </Card>
             </View>
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management 1-142
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Honors
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.asyncStore('ACCT 2050H-001')}
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
 
           </ScrollView>
         );
@@ -704,6 +1086,55 @@ class CourseSearch extends Component {
                       title='Schedule'
                       onPress={() => this.props.asyncAddSchedule('ACCT 2050-001', ['M','W'], '8.00', '9.40', 'Carlson School of Management L-110')}
 
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Carlson School of Management 1-142
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Honors
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.asyncStore('ACCT 2050H-001')}
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
                     />
                   </View>
                 </View>
@@ -1250,6 +1681,153 @@ class CourseSearch extends Component {
                   </View>
                 </Card>
               </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Fraser Hall 101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1371-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student and permission of University Honors Program
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1271-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
 
             </ScrollView>
           );
@@ -1310,6 +1888,153 @@ class CourseSearch extends Component {
                         title='Schedule'
                         onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Fraser Hall 101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1371-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student and permission of University Honors Program
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1271-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
                       />
                     </View>
                   </View>
@@ -1380,6 +2105,153 @@ class CourseSearch extends Component {
                   </View>
                 </Card>
               </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Fraser Hall 101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1371-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student and permission of University Honors Program
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1271-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
 
             </ScrollView>
           );
@@ -1445,6 +2317,153 @@ class CourseSearch extends Component {
                   </View>
                 </Card>
               </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Fraser Hall 101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1371-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student and permission of University Honors Program
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1271-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
 
             </ScrollView>
           );
@@ -1505,6 +2524,153 @@ class CourseSearch extends Component {
                       title='Schedule'
                       onPress={() => this.props.asyncAddSchedule('MATH 1142-001', ['M','W'], '18.00', '20.05', 'Lind Hall 302')}
 
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Fraser Hall 101
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.asyncStore('MATH 1371-001')}
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Ford Hall B15
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: Honors student and permission of University Honors Program
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.asyncStore('MATH 1571H-001')}
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                    />
+                  </View>
+                </View>
+              </Card>
+            </View>
+            <View>
+              <Card>
+                <View style={styles.flextext}>
+                  <View style={styles.leftContainer}>
+                    <Text style={[styles.text, {textAlign: 'left'}]}>
+                      MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                    </Text>
+                  </View>
+                  <View style={styles.rightContainer}>
+                    <Text style={[styles.text, {textAlign: 'right'}]}>
+                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.cardcontent}>
+                  <Text style={styles.cardcontenttext}>
+                    Location: Ford Hall B15
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                  </Text>
+                  <Text style={styles.cardcontenttext}>
+                    Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                  </Text>
+                </View>
+                <View style={styles.flexcontainer}>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'star'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='SAVE'
+                      onPress={() => this.asyncStore('MATH 1271-001')}
+                    />
+                  </View>
+                  <View style={styles.buttonContainer}>
+                    <Button
+                      raised
+                      icon={{name: 'plus-square', type: 'font-awesome'}}
+                      backgroundColor='#03A9F4'
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Schedule'
+                      onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
                     />
                   </View>
                 </View>
@@ -1779,196 +2945,1004 @@ class CourseSearch extends Component {
 
           </ScrollView>
         );
-      case 'ECON 1101-034':
-        return(
-          <ScrollView>
-            <TextInput
-              style={styles.topsearchstyle}
-              placeholder="Course Search"
-              onChangeText={(text) => this.setState({text})}
-              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
-            />
+        case 'ACCT 2050H-001':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
 
 
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Carlson School of Management 1-142
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Introduction to financial accounting for U.S. organizations. Reading financial statements.
                     </Text>
                   </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('ACCT 2050H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
+          case 'ACCT 2050H':
+            return(
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
+
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Carlson School of Management 1-142
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: Honors
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('ACCT 2050H-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+              </ScrollView>
+            );
+        case 'MATH 1371-001':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Fraser Hall 101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
                     </Text>
                   </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Associated Section: ECON 1101-033
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Carlson School of Management L-126
-                  </Text>
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-034')}
-
-                    />
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1371-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                      />
+                    </View>
                   </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'plus-square', type: 'font-awesome'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
+                </Card>
+              </View>
+            </ScrollView>
+          );
+          case 'MATH 1371':
+            return(
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
 
-                    />
-                  </View>
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          MATH 1371-001{"\n"}Spring 2018{"\n"}T Th 9:05 - 9:55
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 32/45
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Fraser Hall 101
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: CSE or pre-bioprod concurrent registration is required (or allowed) in biosys engn (PRE), background in [precalculus, geometry, visualization of functions/graphs], instr consent; familiarity with graphing calculators recommended
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Differentiation of single-variable functions, basics of integration of single-variable functions. Applications: max-min, related rates, area, curve-sketching. Use of calculator, cooperative learning.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('MATH 1371-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.asyncAddSchedule('MATH 1371-001', ['Tu','Th'], '9.05', '9.55', 'Fraser Hall 101')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
                 </View>
-              </Card>
-            </View>
-
-          </ScrollView>
-        );
-      case 'ECON 1101-033':
-        return(
-          <ScrollView>
-            <TextInput
-              style={styles.topsearchstyle}
-              placeholder="Course Search"
-              onChangeText={(text) => this.setState({text})}
-              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
-            />
+              </ScrollView>
+            );
+        case 'MATH 1571H':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
 
 
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student and permission of University Honors Program
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
                     </Text>
                   </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
+          case 'MATH 1571H-001':
+            return(
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
+
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Ford Hall B15
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: Honors student and permission of University Honors Program
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('MATH 1571H-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+              </ScrollView>
+            );
+        case 'MATH 1271':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ford Hall B15
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
                     </Text>
                   </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Blegen Hall 425
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Prereq: knowledge of plane geometry and advanced algebra
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Notes: This course has common midterm exams that take place in the evening and a common final exam.
-                  </Text>
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-033')}
-
-                    />
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('MATH 1271-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
+                      />
+                    </View>
                   </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'plus-square', type: 'font-awesome'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
+                </Card>
+              </View>
+            </ScrollView>
+          );
+          case 'MATH 1271-001':
+            return(
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
 
-                    />
-                  </View>
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          MATH 1271-001{"\n"}Spring 2018{"\n"}M W 6:00 - 8:05
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 14/28
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Ford Hall B15
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: 4 yrs high school math including trig or satisfactory score on placement test or grade of at least C- in [1151 or 1155]
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Differential calculus of functions of a single variable, including polynomial, rational, exponential, and trig functions. Applications, including optimization and related rates problems. Single variable integral calculus, using anti-derivatives and simple substitution. Applications may include area, volume, work problems.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('MATH 1271-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.asyncAddSchedule('MATH 1271-001', ['M','W'], '18.00', '20.05', 'Ford Hall B15')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
                 </View>
-              </Card>
-            </View>
-          </ScrollView>
-        );
-      case 'ECON 1101-002':
-        return(
-          <ScrollView>
-            <TextInput
-              style={styles.topsearchstyle}
-              placeholder="Course Search"
-              onChangeText={(text) => this.setState({text})}
-              onSubmitEditing={() => this.props.searchHandler(this.state.text)}
-            />
+              </ScrollView>
+            );
+        case 'APEC 1102H':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
 
 
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Blegen Hall 120
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
                     </Text>
                   </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1102H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
+          case 'APEC 1102H-001':
+            return(
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
+
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Blegen Hall 120
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('APEC 1102H-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
+                </View>
+              </ScrollView>
+            );
+        case 'APEC 1102-001':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1102-001{"\n"}Spring 2018{"\n"}M W F 10:40 - 11:30
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Gary Cooper{"\n"}Capacity: 29/80
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: APEC 1101 or ECON 1101
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Unemployment/inflation, measures of national income, macro models, fiscal policy/problems. Taxes and the national debt. Money/banking, monetary policy/problems. Poverty and income distribution. International trade and exchange rates. Economic growth/development.
                     </Text>
                   </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Associated Section: ECON 1101-001
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Blegen Hall 415
-                  </Text>
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-002')}
-
-                    />
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1102-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                      />
+                    </View>
                   </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'plus-square', type: 'font-awesome'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
+                </Card>
+              </View>
+            </ScrollView>
+          );
+          case 'APEC 1102':
+            return(
+              <ScrollView>
+                <TextInput
+                  style={styles.topsearchstyle}
+                  placeholder="Course Search"
+                  onChangeText={(text) => this.setState({text})}
+                  onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                />
 
-                    />
-                  </View>
+
+                <View>
+                  <Card>
+                    <View style={styles.flextext}>
+                      <View style={styles.leftContainer}>
+                        <Text style={[styles.text, {textAlign: 'left'}]}>
+                          APEC 1102-001{"\n"}Spring 2018{"\n"}M W F 10:40 - 11:30
+                        </Text>
+                      </View>
+                      <View style={styles.rightContainer}>
+                        <Text style={[styles.text, {textAlign: 'right'}]}>
+                          Lecture{"\n"}Gary Cooper{"\n"}Capacity: 29/80
+                        </Text>
+                      </View>
+                    </View>
+                    <View style={styles.cardcontent}>
+                      <Text style={styles.cardcontenttext}>
+                        Location: Ruttan Hall B35
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Prereq: APEC 1101 or ECON 1101
+                      </Text>
+                      <Text style={styles.cardcontenttext}>
+                        Unemployment/inflation, measures of national income, macro models, fiscal policy/problems. Taxes and the national debt. Money/banking, monetary policy/problems. Poverty and income distribution. International trade and exchange rates. Economic growth/development.
+                      </Text>
+                    </View>
+                    <View style={styles.flexcontainer}>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'star'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='SAVE'
+                          onPress={() => this.asyncStore('APEC 1102-001')}
+                        />
+                      </View>
+                      <View style={styles.buttonContainer}>
+                        <Button
+                          raised
+                          icon={{name: 'plus-square', type: 'font-awesome'}}
+                          backgroundColor='#03A9F4'
+                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                          title='Schedule'
+                          onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                        />
+                      </View>
+                    </View>
+                  </Card>
                 </View>
-              </Card>
-            </View>
-          </ScrollView>
-        );
+              </ScrollView>
+            );
+        case 'APEC 1101H':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student, proficiency in high school algebra
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1101H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
+        case 'APEC 1101H-001':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Prereq: Honors student, proficiency in high school algebra
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1101H-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
+        case 'APEC 1101':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1101-001{"\n"}Spring 2018{"\n"}Tu Th 1:30 - 2:45
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1101-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('APEC 1101-001', ['Tu','Th'], '13.30', '14.45', 'Ruttan Hall B35')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
+        case 'APEC 1101-001':
+          return(
+            <ScrollView>
+              <TextInput
+                style={styles.topsearchstyle}
+                placeholder="Course Search"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+              />
+
+
+              <View>
+                <Card>
+                  <View style={styles.flextext}>
+                    <View style={styles.leftContainer}>
+                      <Text style={[styles.text, {textAlign: 'left'}]}>
+                        APEC 1101-001{"\n"}Spring 2018{"\n"}Tu Th 1:30 - 2:45
+                      </Text>
+                    </View>
+                    <View style={styles.rightContainer}>
+                      <Text style={[styles.text, {textAlign: 'right'}]}>
+                        Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardcontent}>
+                    <Text style={styles.cardcontenttext}>
+                      Location: Ruttan Hall B35
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                    </Text>
+                    <Text style={styles.cardcontenttext}>
+                      Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                    </Text>
+                  </View>
+                  <View style={styles.flexcontainer}>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'star'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='SAVE'
+                        onPress={() => this.asyncStore('APEC 1101-001')}
+                      />
+                    </View>
+                    <View style={styles.buttonContainer}>
+                      <Button
+                        raised
+                        icon={{name: 'plus-square', type: 'font-awesome'}}
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                        title='Schedule'
+                        onPress={() => this.asyncAddSchedule('APEC 1101-001', ['Tu','Th'], '13.30', '14.45', 'Ruttan Hall B35')}
+                      />
+                    </View>
+                  </View>
+                </Card>
+              </View>
+            </ScrollView>
+          );
       case 'ECON 1101-001':
         return(
           <ScrollView>
@@ -2099,153 +4073,6 @@ class CourseSearch extends Component {
                 </View>
               </Card>
             </View>
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
-                    </Text>
-                  </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
-                    </Text>
-                  </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Associated Section: ECON 1101-001
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Blegen Hall 415
-                  </Text>
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-002')}
-                    />
-                  </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'plus-square', type: 'font-awesome'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
-
-                    />
-                  </View>
-                </View>
-              </Card>
-            </View>
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
-                    </Text>
-                  </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                    </Text>
-                  </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Blegen Hall 425
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Prereq: knowledge of plane geometry and advanced algebra
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Notes: This course has common midterm exams that take place in the evening and a common final exam.
-                  </Text>
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-033')}
-                    />
-                  </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'plus-square', type: 'font-awesome'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
-
-                    />
-                  </View>
-                </View>
-              </Card>
-            </View>
-            <View>
-              <Card>
-                <View style={styles.flextext}>
-                  <View style={styles.leftContainer}>
-                    <Text style={[styles.text, {textAlign: 'left'}]}>
-                      ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
-                    </Text>
-                  </View>
-                  <View style={styles.rightContainer}>
-                    <Text style={[styles.text, {textAlign: 'right'}]}>
-                      Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                    </Text>
-                  </View>
-                </View>
-                <View style={styles.cardcontent}>
-                  <Text style={styles.cardcontenttext}>
-                    Associated Section: ECON 1101-033
-                  </Text>
-                  <Text style={styles.cardcontenttext}>
-                    Location: Carlson School of Management L-126
-                  </Text>
-                </View>
-                <View style={styles.flexcontainer}>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'star'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='SAVE'
-                      onPress={() => this.props.asyncStore('ECON 1101-034')}
-                    />
-                  </View>
-                  <View style={styles.buttonContainer}>
-                    <Button
-                      raised
-                      icon={{name: 'plus-square', type: 'font-awesome'}}
-                      backgroundColor='#03A9F4'
-                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                      title='Schedule'
-                      onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
-
-                    />
-                  </View>
-                </View>
-              </Card>
-            </View>
           </ScrollView>
         );
         case 'ECON':
@@ -2306,153 +4133,6 @@ class CourseSearch extends Component {
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
                         onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
-
-                      />
-                    </View>
-                  </View>
-                </Card>
-              </View>
-              <View>
-                <Card>
-                  <View style={styles.flextext}>
-                    <View style={styles.leftContainer}>
-                      <Text style={[styles.text, {textAlign: 'left'}]}>
-                        ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
-                      </Text>
-                    </View>
-                    <View style={styles.rightContainer}>
-                      <Text style={[styles.text, {textAlign: 'right'}]}>
-                        Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
-                      </Text>
-                    </View>
-                  </View>
-                  <View style={styles.cardcontent}>
-                    <Text style={styles.cardcontenttext}>
-                      Associated Section: ECON 1101-001
-                    </Text>
-                    <Text style={styles.cardcontenttext}>
-                      Location: Blegen Hall 415
-                    </Text>
-                  </View>
-                  <View style={styles.flexcontainer}>
-                    <View style={styles.buttonContainer}>
-                      <Button
-                        raised
-                        icon={{name: 'star'}}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                        title='SAVE'
-                        onPress={() => this.props.asyncStore('ECON 1101-002')}
-                      />
-                    </View>
-                    <View style={styles.buttonContainer}>
-                      <Button
-                        raised
-                        icon={{name: 'plus-square', type: 'font-awesome'}}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                        title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
-
-                      />
-                    </View>
-                  </View>
-                </Card>
-              </View>
-              <View>
-                <Card>
-                  <View style={styles.flextext}>
-                    <View style={styles.leftContainer}>
-                      <Text style={[styles.text, {textAlign: 'left'}]}>
-                        ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
-                      </Text>
-                    </View>
-                    <View style={styles.rightContainer}>
-                      <Text style={[styles.text, {textAlign: 'right'}]}>
-                        Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                      </Text>
-                    </View>
-                  </View>
-                  <View style={styles.cardcontent}>
-                    <Text style={styles.cardcontenttext}>
-                      Location: Blegen Hall 425
-                    </Text>
-                    <Text style={styles.cardcontenttext}>
-                      Prereq: knowledge of plane geometry and advanced algebra
-                    </Text>
-                    <Text style={styles.cardcontenttext}>
-                      Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
-                    </Text>
-                    <Text style={styles.cardcontenttext}>
-                      Notes: This course has common midterm exams that take place in the evening and a common final exam.
-                    </Text>
-                  </View>
-                  <View style={styles.flexcontainer}>
-                    <View style={styles.buttonContainer}>
-                      <Button
-                        raised
-                        icon={{name: 'star'}}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                        title='SAVE'
-                        onPress={() => this.props.asyncStore('ECON 1101-033')}
-                      />
-                    </View>
-                    <View style={styles.buttonContainer}>
-                      <Button
-                        raised
-                        icon={{name: 'plus-square', type: 'font-awesome'}}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                        title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
-
-                      />
-                    </View>
-                  </View>
-                </Card>
-              </View>
-              <View>
-                <Card>
-                  <View style={styles.flextext}>
-                    <View style={styles.leftContainer}>
-                      <Text style={[styles.text, {textAlign: 'left'}]}>
-                        ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
-                      </Text>
-                    </View>
-                    <View style={styles.rightContainer}>
-                      <Text style={[styles.text, {textAlign: 'right'}]}>
-                        Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                      </Text>
-                    </View>
-                  </View>
-                  <View style={styles.cardcontent}>
-                    <Text style={styles.cardcontenttext}>
-                      Associated Section: ECON 1101-033
-                    </Text>
-                    <Text style={styles.cardcontenttext}>
-                      Location: Carlson School of Management L-126
-                    </Text>
-                  </View>
-                  <View style={styles.flexcontainer}>
-                    <View style={styles.buttonContainer}>
-                      <Button
-                        raised
-                        icon={{name: 'star'}}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                        title='SAVE'
-                        onPress={() => this.props.asyncStore('ECON 1101-034')}
-                      />
-                    </View>
-                    <View style={styles.buttonContainer}>
-                      <Button
-                        raised
-                        icon={{name: 'plus-square', type: 'font-awesome'}}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                        title='Schedule'
-                        onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
 
                       />
                     </View>
@@ -2584,153 +4264,6 @@ class CourseSearch extends Component {
                     <View style={styles.flextext}>
                       <View style={styles.leftContainer}>
                         <Text style={[styles.text, {textAlign: 'left'}]}>
-                          ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
-                        </Text>
-                      </View>
-                      <View style={styles.rightContainer}>
-                        <Text style={[styles.text, {textAlign: 'right'}]}>
-                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
-                        </Text>
-                      </View>
-                    </View>
-                    <View style={styles.cardcontent}>
-                      <Text style={styles.cardcontenttext}>
-                        Associated Section: ECON 1101-001
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Location: Blegen Hall 415
-                      </Text>
-                    </View>
-                    <View style={styles.flexcontainer}>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'star'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='SAVE'
-                          onPress={() => this.props.asyncStore('ECON 1101-002')}
-                        />
-                      </View>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'plus-square', type: 'font-awesome'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
-
-                        />
-                      </View>
-                    </View>
-                  </Card>
-                </View>
-                <View>
-                  <Card>
-                    <View style={styles.flextext}>
-                      <View style={styles.leftContainer}>
-                        <Text style={[styles.text, {textAlign: 'left'}]}>
-                          ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
-                        </Text>
-                      </View>
-                      <View style={styles.rightContainer}>
-                        <Text style={[styles.text, {textAlign: 'right'}]}>
-                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                        </Text>
-                      </View>
-                    </View>
-                    <View style={styles.cardcontent}>
-                      <Text style={styles.cardcontenttext}>
-                        Location: Blegen Hall 425
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Prereq: knowledge of plane geometry and advanced algebra
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Notes: This course has common midterm exams that take place in the evening and a common final exam.
-                      </Text>
-                    </View>
-                    <View style={styles.flexcontainer}>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'star'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='SAVE'
-                          onPress={() => this.props.asyncStore('ECON 1101-033')}
-                        />
-                      </View>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'plus-square', type: 'font-awesome'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
-
-                        />
-                      </View>
-                    </View>
-                  </Card>
-                </View>
-                <View>
-                  <Card>
-                    <View style={styles.flextext}>
-                      <View style={styles.leftContainer}>
-                        <Text style={[styles.text, {textAlign: 'left'}]}>
-                          ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
-                        </Text>
-                      </View>
-                      <View style={styles.rightContainer}>
-                        <Text style={[styles.text, {textAlign: 'right'}]}>
-                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                        </Text>
-                      </View>
-                    </View>
-                    <View style={styles.cardcontent}>
-                      <Text style={styles.cardcontenttext}>
-                        Associated Section: ECON 1101-033
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Location: Carlson School of Management L-126
-                      </Text>
-                    </View>
-                    <View style={styles.flexcontainer}>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'star'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='SAVE'
-                          onPress={() => this.props.asyncStore('ECON 1101-034')}
-                        />
-                      </View>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'plus-square', type: 'font-awesome'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
-
-                        />
-                      </View>
-                    </View>
-                  </Card>
-                </View>
-                <View>
-                  <Card>
-                    <View style={styles.flextext}>
-                      <View style={styles.leftContainer}>
-                        <Text style={[styles.text, {textAlign: 'left'}]}>
                           ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
                         </Text>
                       </View>
@@ -2782,6 +4315,974 @@ class CourseSearch extends Component {
                 </View>
               </ScrollView>
             );
+            case 'APEC':
+              return (
+                <ScrollView>
+                  <TextInput
+                    style={styles.topsearchstyle}
+                    placeholder="Course Search"
+                    onChangeText={(text) => this.setState({text})}
+                    onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                  />
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1101-001{"\n"}Spring 2018{"\n"}Tu Th 1:30 - 2:45
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1101-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1101-001', ['Tu','Th'], '13.30', '14.45', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: Honors student, proficiency in high school algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1101H-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1102-001{"\n"}Spring 2018{"\n"}M W F 10:40 - 11:30
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Gary Cooper{"\n"}Capacity: 29/80
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: APEC 1101 or ECON 1101
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Unemployment/inflation, measures of national income, macro models, fiscal policy/problems. Taxes and the national debt. Money/banking, monetary policy/problems. Poverty and income distribution. International trade and exchange rates. Economic growth/development.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1102-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Blegen Hall 120
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1102H-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+
+
+                </ScrollView>
+              );
+              case 'honors':
+                return (
+                  <ScrollView>
+                    <TextInput
+                      style={styles.topsearchstyle}
+                      placeholder="Course Search"
+                      onChangeText={(text) => this.setState({text})}
+                      onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                    />
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Ruttan Hall B35
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: Honors student, proficiency in high school algebra
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('APEC 1101H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Blegen Hall 120
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('APEC 1102H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Ford Hall B15
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: Honors student and permission of University Honors Program
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('MATH 1571H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Carlson School of Management 1-142
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: Honors
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('ACCT 2050H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+
+
+                  </ScrollView>
+                );
+              case 'Honors':
+                return (
+                  <ScrollView>
+                    <TextInput
+                      style={styles.topsearchstyle}
+                      placeholder="Course Search"
+                      onChangeText={(text) => this.setState({text})}
+                      onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                    />
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Ruttan Hall B35
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: Honors student, proficiency in high school algebra
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('APEC 1101H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Blegen Hall 120
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('APEC 1102H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              MATH 1571H-001{"\n"}Spring 2018{"\n"}T Th 6:00 - 8:05
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Professor TBD{"\n"}Capacity: 12/28
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Ford Hall B15
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: Honors student and permission of University Honors Program
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Differential/integral calculus of functions of a single variable. Emphasizes hard problem-solving rather than theory.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('MATH 1571H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('MATH 1571H-001', ['Tu','Th'], '18.00', '20.05', 'Ford Hall B15')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+                    <View>
+                      <Card>
+                        <View style={styles.flextext}>
+                          <View style={styles.leftContainer}>
+                            <Text style={[styles.text, {textAlign: 'left'}]}>
+                              ACT 2050H-001{"\n"}Spring 2018{"\n"}T Th 9:55 - 11:35
+                            </Text>
+                          </View>
+                          <View style={styles.rightContainer}>
+                            <Text style={[styles.text, {textAlign: 'right'}]}>
+                              Lecture{"\n"}Cyrus Aghamolla{"\n"}Capacity: 22/48
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={styles.cardcontent}>
+                          <Text style={styles.cardcontenttext}>
+                            Location: Carlson School of Management 1-142
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Prereq: Honors
+                          </Text>
+                          <Text style={styles.cardcontenttext}>
+                            Introduction to financial accounting for U.S. organizations. Reading financial statements.
+                          </Text>
+                        </View>
+                        <View style={styles.flexcontainer}>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'star'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='SAVE'
+                              onPress={() => this.asyncStore('ACCT 2050H-001')}
+                            />
+                          </View>
+                          <View style={styles.buttonContainer}>
+                            <Button
+                              raised
+                              icon={{name: 'plus-square', type: 'font-awesome'}}
+                              backgroundColor='#03A9F4'
+                              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                              title='Schedule'
+                              onPress={() => this.asyncAddSchedule('ACCT 2050H-001', ['Tu','Th'], '9.55', '11.35', 'Carlson School of Management 1-142')}
+                            />
+                          </View>
+                        </View>
+                      </Card>
+                    </View>
+
+
+                  </ScrollView>
+                );
+            case 'Macroeconomics':
+              return (
+                <ScrollView>
+                  <TextInput
+                    style={styles.topsearchstyle}
+                    placeholder="Course Search"
+                    onChangeText={(text) => this.setState({text})}
+                    onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                  />
+
+
+
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Wiley Hall 175
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
+
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1102-001{"\n"}Spring 2018{"\n"}M W F 10:40 - 11:30
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Gary Cooper{"\n"}Capacity: 29/80
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: APEC 1101 or ECON 1101
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Unemployment/inflation, measures of national income, macro models, fiscal policy/problems. Taxes and the national debt. Money/banking, monetary policy/problems. Poverty and income distribution. International trade and exchange rates. Economic growth/development.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1102-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Blegen Hall 120
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1102H-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                </ScrollView>
+              );
+            case 'macroeconomics':
+              return (
+                <ScrollView>
+                  <TextInput
+                    style={styles.topsearchstyle}
+                    placeholder="Course Search"
+                    onChangeText={(text) => this.setState({text})}
+                    onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                  />
+
+
+
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Wiley Hall 175
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: [1101 or equiv], knowledge of plane geometry and advanced algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Aggregate consumption, saving, investment, and national income. Role of money, banking, and business cycles in domestic and world economy. International trade, growth, and development. U.S. economy and its role in the world economy. International interdependencies among nations.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: This course has evening midterms. (2 hr evening final) The common final includes ALL sections of 1102 -- of course excluding IDL.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.props.asyncStore('ECON 1102-001')}
+
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.props.asyncAddSchedule('ECON 1102-001', ['Tu','Th'], '9.45', '11.00', 'Wiley Hall 175')}
+
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1102-001{"\n"}Spring 2018{"\n"}M W F 10:40 - 11:30
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Gary Cooper{"\n"}Capacity: 29/80
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: APEC 1101 or ECON 1101
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Unemployment/inflation, measures of national income, macro models, fiscal policy/problems. Taxes and the national debt. Money/banking, monetary policy/problems. Poverty and income distribution. International trade and exchange rates. Economic growth/development.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1102-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1102H-001{"\n"}Spring 2018{"\n"}Tu Th 11:15 - 12:30
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Fahima Aziz{"\n"}Capacity: 12/30
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Blegen Hall 120
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: APEC 1101 or APEC 1101H or ECON 1101 or ECON 1101H, honors
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Measuring/describing an economy. Macroeconomic phenomena, including long-term growth, inflation, unemployment, and recessions. International trade and capital flows. Simple macroeconomic models. Financial markets. Monetary policy. Taxation, government expenditure, and debt as macroeconomic policy. Poverty and income distribution.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1102H-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                </ScrollView>
+              );
           case 'economics':
             return (
               <ScrollView>
@@ -2851,153 +5352,6 @@ class CourseSearch extends Component {
                     <View style={styles.flextext}>
                       <View style={styles.leftContainer}>
                         <Text style={[styles.text, {textAlign: 'left'}]}>
-                          ECON 1101-002{"\n"}Spring 2018{"\n"}W 10:10 - 11:00
-                        </Text>
-                      </View>
-                      <View style={styles.rightContainer}>
-                        <Text style={[styles.text, {textAlign: 'right'}]}>
-                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 19/35
-                        </Text>
-                      </View>
-                    </View>
-                    <View style={styles.cardcontent}>
-                      <Text style={styles.cardcontenttext}>
-                        Associated Section: ECON 1101-001
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Location: Blegen Hall 415
-                      </Text>
-                    </View>
-                    <View style={styles.flexcontainer}>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'star'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='SAVE'
-                          onPress={() => this.props.asyncStore('ECON 1101-002')}
-                        />
-                      </View>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'plus-square', type: 'font-awesome'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-002', ['W'], '10.10', '11.00', 'Blegen Hall 415')}
-
-                        />
-                      </View>
-                    </View>
-                  </Card>
-                </View>
-                <View>
-                  <Card>
-                    <View style={styles.flextext}>
-                      <View style={styles.leftContainer}>
-                        <Text style={[styles.text, {textAlign: 'left'}]}>
-                          ECON 1101-033{"\n"}Spring 2018{"\n"}M W 4:00 - 5:15
-                        </Text>
-                      </View>
-                      <View style={styles.rightContainer}>
-                        <Text style={[styles.text, {textAlign: 'right'}]}>
-                          Lecture{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                        </Text>
-                      </View>
-                    </View>
-                    <View style={styles.cardcontent}>
-                      <Text style={styles.cardcontenttext}>
-                        Location: Blegen Hall 425
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Prereq: knowledge of plane geometry and advanced algebra
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Notes: This course has common midterm exams that take place in the evening and a common final exam.
-                      </Text>
-                    </View>
-                    <View style={styles.flexcontainer}>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'star'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='SAVE'
-                          onPress={() => this.props.asyncStore('ECON 1101-033')}
-                        />
-                      </View>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'plus-square', type: 'font-awesome'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-033', ['M','W'], '16.00', '17.15', 'Blegen Hall 425')}
-
-                        />
-                      </View>
-                    </View>
-                  </Card>
-                </View>
-                <View>
-                  <Card>
-                    <View style={styles.flextext}>
-                      <View style={styles.leftContainer}>
-                        <Text style={[styles.text, {textAlign: 'left'}]}>
-                          ECON 1101-034{"\n"}Spring 2018{"\n"}W 5:30 - 6:20
-                        </Text>
-                      </View>
-                      <View style={styles.rightContainer}>
-                        <Text style={[styles.text, {textAlign: 'right'}]}>
-                          Discussion{"\n"}Professor TBD{"\n"}Capacity: 9/35
-                        </Text>
-                      </View>
-                    </View>
-                    <View style={styles.cardcontent}>
-                      <Text style={styles.cardcontenttext}>
-                        Associated Section: ECON 1101-033
-                      </Text>
-                      <Text style={styles.cardcontenttext}>
-                        Location: Carlson School of Management L-126
-                      </Text>
-                    </View>
-                    <View style={styles.flexcontainer}>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'star'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='SAVE'
-                          onPress={() => this.props.asyncStore('ECON 1101-034')}
-                        />
-                      </View>
-                      <View style={styles.buttonContainer}>
-                        <Button
-                          raised
-                          icon={{name: 'plus-square', type: 'font-awesome'}}
-                          backgroundColor='#03A9F4'
-                          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                          title='Schedule'
-                          onPress={() => this.props.asyncAddSchedule('ECON 1101-034', ['W'], '17.30', '18.20', 'Carlson School of Management L-126')}
-
-                        />
-                      </View>
-                    </View>
-                  </Card>
-                </View>
-                <View>
-                  <Card>
-                    <View style={styles.flextext}>
-                      <View style={styles.leftContainer}>
-                        <Text style={[styles.text, {textAlign: 'left'}]}>
                           ECON 1102-001{"\n"}Spring 2018{"\n"}T Th 9:45 - 11:00
                         </Text>
                       </View>
@@ -3049,6 +5403,340 @@ class CourseSearch extends Component {
                 </View>
               </ScrollView>
             );
+            case 'Microeconomics':
+              return (
+                <ScrollView>
+                  <TextInput
+                    style={styles.topsearchstyle}
+                    placeholder="Course Search"
+                    onChangeText={(text) => this.setState({text})}
+                    onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                  />
+
+
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            ECON 1101-001{"\n"}Spring 2018{"\n"}M W F 9:05 - 9:55
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Wiley Hall 175
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: knowledge of plane geometry and advanced algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.props.asyncStore('ECON 1101-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
+
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: Honors student, proficiency in high school algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1101H-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1101-001{"\n"}Spring 2018{"\n"}Tu Th 1:30 - 2:45
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1101-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1101-001', ['Tu','Th'], '13.30', '14.45', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                </ScrollView>
+              );
+            case 'microeconomics':
+              return (
+                <ScrollView>
+                  <TextInput
+                    style={styles.topsearchstyle}
+                    placeholder="Course Search"
+                    onChangeText={(text) => this.setState({text})}
+                    onSubmitEditing={() => this.props.searchHandler(this.state.text)}
+                  />
+
+
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            ECON 1101-001{"\n"}Spring 2018{"\n"}M W F 9:05 - 9:55
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Professor TBD{"\n"}Capacity: 450/500
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Wiley Hall 175
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: knowledge of plane geometry and advanced algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Microeconomic behavior of consumers, firms, and markets in domestic and world economy. Demand and supply. Competition and monopoly. Distribution of income. Economic interdependencies in the global economy. Effects of global linkages on individual decisions.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: This course has common midterm exams that take place in the evening and a common final exam.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.props.asyncStore('ECON 1101-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.props.asyncAddSchedule('ECON 1101-001', ['M','W', 'F'], '9.05', '9.55', 'Wiley Hall 175')}
+
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1101H-001{"\n"}Spring 2018{"\n"}M W 1:30 - 2:45
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Prereq: Honors student, proficiency in high school algebra
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1101H-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1101H-001', ['M','W'], '13.30', '14.45', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                  <View>
+                    <Card>
+                      <View style={styles.flextext}>
+                        <View style={styles.leftContainer}>
+                          <Text style={[styles.text, {textAlign: 'left'}]}>
+                            APEC 1101-001{"\n"}Spring 2018{"\n"}Tu Th 1:30 - 2:45
+                          </Text>
+                        </View>
+                        <View style={styles.rightContainer}>
+                          <Text style={[styles.text, {textAlign: 'right'}]}>
+                            Lecture{"\n"}Donald Liu{"\n"}Capacity: 68/120
+                          </Text>
+                        </View>
+                      </View>
+                      <View style={styles.cardcontent}>
+                        <Text style={styles.cardcontenttext}>
+                          Location: Ruttan Hall B35
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Economic behavior of consumers/firms in domestic/international markets. Demand, supply, competition. Efficiency, Invisible Hand. Monopoly, imperfect competition. Externalities, property rights. Economics of public policy in environment/health/safety. Public goods, tax policy.
+                        </Text>
+                        <Text style={styles.cardcontenttext}>
+                          Notes: First day of class attendance policy: You must attend the first class meeting and the first discussion session, unless you obtain approval for your intended absence before the first meeting. Without this prior approval, you may lose your place in class to another student.
+                        </Text>
+                      </View>
+                      <View style={styles.flexcontainer}>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'star'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='SAVE'
+                            onPress={() => this.asyncStore('APEC 1101-001')}
+                          />
+                        </View>
+                        <View style={styles.buttonContainer}>
+                          <Button
+                            raised
+                            icon={{name: 'plus-square', type: 'font-awesome'}}
+                            backgroundColor='#03A9F4'
+                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                            title='Schedule'
+                            onPress={() => this.asyncAddSchedule('APEC 1101-001', ['Tu','Th'], '13.30', '14.45', 'Ruttan Hall B35')}
+                          />
+                        </View>
+                      </View>
+                    </Card>
+                  </View>
+                </ScrollView>
+              );
     case 'init':
       return(
         <ScrollView>
