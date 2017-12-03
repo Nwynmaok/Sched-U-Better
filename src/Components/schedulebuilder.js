@@ -88,7 +88,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1101-001')}
+                        onPress={() => this.props.asyncStore('APEC 1101-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -146,7 +146,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('APEC 1101H-001')}
+                          onPress={() => this.props.asyncStore('APEC 1101H-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -201,7 +201,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1102-001')}
+                        onPress={() => this.props.asyncStore('APEC 1102-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -256,7 +256,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1102H-001')}
+                        onPress={() => this.props.asyncStore('APEC 1102H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -311,7 +311,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1271-001')}
+                        onPress={() => this.props.asyncStore('MATH 1271-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -366,7 +366,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                        onPress={() => this.props.asyncStore('MATH 1571H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -421,7 +421,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1371-001')}
+                        onPress={() => this.props.asyncStore('MATH 1371-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -476,7 +476,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('ACCT 2050H-001')}
+                        onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -890,7 +890,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.asyncStore('ACCT 2050H-001')}
+                      onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -1007,7 +1007,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.asyncStore('ACCT 2050H-001')}
+                      onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -1124,7 +1124,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.asyncStore('ACCT 2050H-001')}
+                      onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -1714,7 +1714,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1371-001')}
+                        onPress={() => this.props.asyncStore('MATH 1371-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -1763,7 +1763,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                        onPress={() => this.props.asyncStore('MATH 1571H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -1812,7 +1812,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1271-001')}
+                        onPress={() => this.props.asyncStore('MATH 1271-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -1926,7 +1926,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1371-001')}
+                        onPress={() => this.props.asyncStore('MATH 1371-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -1975,7 +1975,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                        onPress={() => this.props.asyncStore('MATH 1571H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2024,7 +2024,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1271-001')}
+                        onPress={() => this.props.asyncStore('MATH 1271-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2138,7 +2138,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1371-001')}
+                        onPress={() => this.props.asyncStore('MATH 1371-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2187,7 +2187,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                        onPress={() => this.props.asyncStore('MATH 1571H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2236,7 +2236,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1271-001')}
+                        onPress={() => this.props.asyncStore('MATH 1271-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2350,7 +2350,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1371-001')}
+                        onPress={() => this.props.asyncStore('MATH 1371-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2399,7 +2399,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                        onPress={() => this.props.asyncStore('MATH 1571H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2448,7 +2448,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1271-001')}
+                        onPress={() => this.props.asyncStore('MATH 1271-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -2562,7 +2562,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.asyncStore('MATH 1371-001')}
+                      onPress={() => this.props.asyncStore('MATH 1371-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -2611,7 +2611,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.asyncStore('MATH 1571H-001')}
+                      onPress={() => this.props.asyncStore('MATH 1571H-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -2660,7 +2660,7 @@ class CourseSearch extends Component {
                       backgroundColor='#03A9F4'
                       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                       title='SAVE'
-                      onPress={() => this.asyncStore('MATH 1271-001')}
+                      onPress={() => this.props.asyncStore('MATH 1271-001')}
                     />
                   </View>
                   <View style={styles.buttonContainer}>
@@ -2989,7 +2989,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('ACCT 2050H-001')}
+                        onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3051,7 +3051,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('ACCT 2050H-001')}
+                          onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -3113,7 +3113,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1371-001')}
+                        onPress={() => this.props.asyncStore('MATH 1371-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3175,7 +3175,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('MATH 1371-001')}
+                          onPress={() => this.props.asyncStore('MATH 1371-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -3237,7 +3237,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1571H-001')}
+                        onPress={() => this.props.asyncStore('MATH 1571H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3299,7 +3299,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('MATH 1571H-001')}
+                          onPress={() => this.props.asyncStore('MATH 1571H-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -3361,7 +3361,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('MATH 1271-001')}
+                        onPress={() => this.props.asyncStore('MATH 1271-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3423,7 +3423,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('MATH 1271-001')}
+                          onPress={() => this.props.asyncStore('MATH 1271-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -3485,7 +3485,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1102H-001')}
+                        onPress={() => this.props.asyncStore('APEC 1102H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3547,7 +3547,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('APEC 1102H-001')}
+                          onPress={() => this.props.asyncStore('APEC 1102-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -3557,7 +3557,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
+                          onPress={() => this.asyncAddSchedule('APEC 1102-001', ['Tu','Th'], '11.15', '12.30', 'Blegen Hall 120')}
                         />
                       </View>
                     </View>
@@ -3609,7 +3609,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1102-001')}
+                        onPress={() => this.props.asyncStore('APEC 1102-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3619,7 +3619,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='Schedule'
-                        onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                        onPress={() => this.asyncAddSchedule('APEC 1102-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
                       />
                     </View>
                   </View>
@@ -3671,7 +3671,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='SAVE'
-                          onPress={() => this.asyncStore('APEC 1102-001')}
+                          onPress={() => this.props.asyncStore('APEC 1102-001')}
                         />
                       </View>
                       <View style={styles.buttonContainer}>
@@ -3681,7 +3681,7 @@ class CourseSearch extends Component {
                           backgroundColor='#03A9F4'
                           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                           title='Schedule'
-                          onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                          onPress={() => this.asyncAddSchedule('APEC 1102-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
                         />
                       </View>
                     </View>
@@ -3736,7 +3736,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1101H-001')}
+                        onPress={() => this.props.asyncStore('APEC 1101H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3801,7 +3801,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1101H-001')}
+                        onPress={() => this.props.asyncStore('APEC 1101H-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3863,7 +3863,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1101-001')}
+                        onPress={() => this.props.asyncStore('APEC 1101-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -3925,7 +3925,7 @@ class CourseSearch extends Component {
                         backgroundColor='#03A9F4'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                         title='SAVE'
-                        onPress={() => this.asyncStore('APEC 1101-001')}
+                        onPress={() => this.props.asyncStore('APEC 1101-001')}
                       />
                     </View>
                     <View style={styles.buttonContainer}>
@@ -4357,7 +4357,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1101-001')}
+                            onPress={() => this.props.asyncStore('APEC 1101-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -4409,7 +4409,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1101H-001')}
+                            onPress={() => this.props.asyncStore('APEC 1101H-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -4458,7 +4458,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1102-001')}
+                            onPress={() => this.props.asyncStore('APEC 1102-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -4468,7 +4468,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='Schedule'
-                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                            onPress={() => this.asyncAddSchedule('APEC 1102-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
                           />
                         </View>
                       </View>
@@ -4507,7 +4507,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1102H-001')}
+                            onPress={() => this.props.asyncStore('APEC 1102H-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -4572,7 +4572,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('APEC 1101H-001')}
+                              onPress={() => this.props.asyncStore('APEC 1101H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4621,7 +4621,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('APEC 1102H-001')}
+                              onPress={() => this.props.asyncStore('APEC 1102H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4670,7 +4670,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('MATH 1571H-001')}
+                              onPress={() => this.props.asyncStore('MATH 1571H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4719,7 +4719,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('ACCT 2050H-001')}
+                              onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4784,7 +4784,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('APEC 1101H-001')}
+                              onPress={() => this.props.asyncStore('APEC 1101H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4833,7 +4833,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('APEC 1102H-001')}
+                              onPress={() => this.props.asyncStore('APEC 1102H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4882,7 +4882,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('MATH 1571H-001')}
+                              onPress={() => this.props.asyncStore('MATH 1571H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -4931,7 +4931,7 @@ class CourseSearch extends Component {
                               backgroundColor='#03A9F4'
                               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                               title='SAVE'
-                              onPress={() => this.asyncStore('ACCT 2050H-001')}
+                              onPress={() => this.props.asyncStore('ACCT 2050H-001')}
                             />
                           </View>
                           <View style={styles.buttonContainer}>
@@ -5050,7 +5050,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1102-001')}
+                            onPress={() => this.props.asyncStore('APEC 1102-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5060,7 +5060,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='Schedule'
-                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                            onPress={() => this.asyncAddSchedule('APEC 1102-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
                           />
                         </View>
                       </View>
@@ -5099,7 +5099,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1102H-001')}
+                            onPress={() => this.props.asyncStore('APEC 1102H-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5216,7 +5216,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1102-001')}
+                            onPress={() => this.props.asyncStore('APEC 1102-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5226,7 +5226,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='Schedule'
-                            onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                            onPress={() => this.asyncAddSchedule('APEC 1102-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
                           />
                         </View>
                       </View>
@@ -5265,7 +5265,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1102H-001')}
+                            onPress={() => this.props.asyncStore('APEC 1102H-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5503,7 +5503,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1101H-001')}
+                            onPress={() => this.props.asyncStore('APEC 1101H-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5552,7 +5552,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1101-001')}
+                            onPress={() => this.props.asyncStore('APEC 1101-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5670,7 +5670,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1101H-001')}
+                            onPress={() => this.props.asyncStore('APEC 1101H-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>
@@ -5719,7 +5719,7 @@ class CourseSearch extends Component {
                             backgroundColor='#03A9F4'
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                             title='SAVE'
-                            onPress={() => this.asyncStore('APEC 1101-001')}
+                            onPress={() => this.props.asyncStore('APEC 1101-001')}
                           />
                         </View>
                         <View style={styles.buttonContainer}>

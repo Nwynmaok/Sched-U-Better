@@ -1126,7 +1126,7 @@ class Courses extends Component {
                     backgroundColor='#03A9F4'
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='Schedule'
-                    onPress={() => this.asyncAddSchedule('APEC 1102H-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
+                    onPress={() => this.asyncAddSchedule('APEC 1102-001', ['M','W', 'F'], '10.40', '11.30', 'Ruttan Hall B35')}
                   />
                 </View>
               </View>
